@@ -1,0 +1,91 @@
+﻿frase,token
+O que significam os símbolos escritos ao lado da porta?,TOKEN_SIMBOLOS
+Esses símbolos na parede são importantes?,TOKEN_SIMBOLOS
+Para que serve essa sequência de símbolos?,TOKEN_SIMBOLOS
+Os desenhos ao lado da porta têm relação com a senha?,TOKEN_SIMBOLOS
+Preciso entender os símbolos para abrir a porta?,TOKEN_SIMBOLOS
+Essa sequência na parede indica alguma coisa?,TOKEN_SIMBOLOS
+Os símbolos mostram quais números devo apertar?,TOKEN_SIMBOLOS
+Como descubro o significado desses símbolos?,TOKEN_SIMBOLOS
+Essa escrita estranha ao lado da porta é uma pista?,TOKEN_SIMBOLOS
+Os símbolos têm relação com o painel numérico?,TOKEN_SIMBOLOS
+Preciso traduzir o que está escrito na parede?,TOKEN_SIMBOLOS
+A ordem dos símbolos é importante?,TOKEN_SIMBOLOS
+Aqueles desenhos perto da porta indicam uma sequência?,TOKEN_SIMBOLOS
+Existe alguma relação entre os símbolos e os números do painel?,TOKEN_SIMBOLOS
+O que devo fazer com a sequência escrita na parede?,TOKEN_SIMBOLOS
+Para que serve a enciclopédia de animais?,TOKEN_LIVRO
+O livro contém alguma pista importante?,TOKEN_LIVRO
+Preciso usar essa enciclopédia para resolver o puzzle?,TOKEN_LIVRO
+O que devo procurar nesse livro?,TOKEN_LIVRO
+A escrita do livro é a mesma da parede?,TOKEN_LIVRO
+Os símbolos da enciclopédia têm algum significado?,TOKEN_LIVRO
+O livro pode ajudar a traduzir os símbolos?,TOKEN_LIVRO
+Existe alguma relação entre os animais do livro e a escrita da parede?,TOKEN_LIVRO
+Preciso consultar algum animal específico na enciclopédia?,TOKEN_LIVRO
+As páginas do livro ajudam a entender essa linguagem?,TOKEN_LIVRO
+Essa enciclopédia funciona como algum tipo de tradução?,TOKEN_LIVRO
+Os nomes dos animais estão escritos usando os mesmos símbolos?,TOKEN_LIVRO
+O livro pode me ajudar a descobrir o que cada símbolo representa?,TOKEN_LIVRO
+Essa escrita estranha aparece tanto no livro quanto na parede?,TOKEN_LIVRO
+Como a enciclopédia pode ajudar a resolver a senha?,TOKEN_LIVRO
+Para que serve o mural com os animais?,TOKEN_MURAL
+Os animais do mural fazem parte da solução?,TOKEN_MURAL
+Preciso contar os animais do mural?,TOKEN_MURAL
+A quantidade de animais é importante?,TOKEN_MURAL
+Existe alguma relação entre os animais e os símbolos?,TOKEN_MURAL
+O mural ajuda a descobrir os números da senha?,TOKEN_MURAL
+Preciso associar cada animal a um símbolo?,TOKEN_MURAL
+O número de cada tipo de animal significa alguma coisa?,TOKEN_MURAL
+As figuras dos animais indicam números?,TOKEN_MURAL
+Tenho que contar quantos animais aparecem no mural?,TOKEN_MURAL
+O mural pode ser usado para traduzir os símbolos em números?,TOKEN_MURAL
+A quantidade de libélulas e outros animais é uma pista?,TOKEN_MURAL
+Cada animal do mural representa algum valor?,TOKEN_MURAL
+Preciso comparar o mural com a enciclopédia?,TOKEN_MURAL
+Como os animais do mural ajudam a descobrir a sequência numérica?,TOKEN_MURAL
+Como faço para abrir o cofre?,TOKEN_COFRE
+Onde posso encontrar a senha do cofre?,TOKEN_COFRE
+O cofre contém alguma pista importante?,TOKEN_COFRE
+Preciso abrir o cofre para resolver o puzzle?,TOKEN_COFRE
+O que existe dentro do cofre?,TOKEN_COFRE
+A senha do cofre está escondida em algum lugar da sala?,TOKEN_COFRE
+Existe alguma pista que indique a combinação do cofre?,TOKEN_COFRE
+O cofre tem relação com o mural quebrado?,TOKEN_COFRE
+Dentro do cofre existe algo necessário para completar o mural?,TOKEN_COFRE
+Preciso descobrir o código do cofre antes de resolver a porta?,TOKEN_COFRE
+A combinação do cofre pode ser encontrada em outro objeto?,TOKEN_COFRE
+O conteúdo do cofre ajuda a entender o mural?,TOKEN_COFRE
+Existe alguma fotografia ou imagem relacionada ao mural dentro do cofre?,TOKEN_COFRE
+Abrir o cofre revela uma parte que está faltando no puzzle?,TOKEN_COFRE
+Como posso descobrir os números que abrem o cofre?,TOKEN_COFRE
+Por que o relógio está parado?,TOKEN_RELOGIO
+O horário mostrado no relógio é importante?,TOKEN_RELOGIO
+O relógio contém alguma pista?,TOKEN_RELOGIO
+Preciso usar as horas mostradas no relógio?,TOKEN_RELOGIO
+O horário tem relação com alguma senha?,TOKEN_RELOGIO
+Os ponteiros do relógio indicam um código?,TOKEN_RELOGIO
+"As horas, minutos e segundos representam alguma coisa?",TOKEN_RELOGIO
+O relógio pode indicar a senha do cofre?,TOKEN_RELOGIO
+Preciso transformar o horário em uma sequência de números?,TOKEN_RELOGIO
+Existe algum motivo para o relógio estar travado nesse horário?,TOKEN_RELOGIO
+A posição dos ponteiros é uma pista?,TOKEN_RELOGIO
+Os números mostrados pelo relógio devem ser usados em algum lugar?,TOKEN_RELOGIO
+Como o relógio ajuda a abrir o cofre?,TOKEN_RELOGIO
+"Preciso observar separadamente as horas, minutos e segundos?",TOKEN_RELOGIO
+O horário congelado corresponde à combinação do cofre?,TOKEN_RELOGIO
+Qual é a capital do Brasil?,TOKEN_NAO_RELACIONADO
+Como está o tempo hoje?,TOKEN_NAO_RELACIONADO
+Quanto é dois mais dois?,TOKEN_NAO_RELACIONADO
+Quem escreveu Dom Casmurro?,TOKEN_NAO_RELACIONADO
+Qual é o maior planeta do Sistema Solar?,TOKEN_NAO_RELACIONADO
+Como faço um bolo de chocolate?,TOKEN_NAO_RELACIONADO
+Qual é a velocidade da luz?,TOKEN_NAO_RELACIONADO
+Quem ganhou o último campeonato de futebol?,TOKEN_NAO_RELACIONADO
+Pode me indicar um filme para assistir?,TOKEN_NAO_RELACIONADO
+Como aprender programação em Python?,TOKEN_NAO_RELACIONADO
+Qual é a distância entre a Terra e a Lua?,TOKEN_NAO_RELACIONADO
+O que significa inteligência artificial?,TOKEN_NAO_RELACIONADO
+Como faço para trocar a senha do meu computador?,TOKEN_NAO_RELACIONADO
+Qual é a receita de pão de queijo?,TOKEN_NAO_RELACIONADO
+Que música você recomenda para estudar?,TOKEN_NAO_RELACIONADO
