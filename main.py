@@ -1,15 +1,60 @@
-"""Ponto de entrada do protótipo executado pelo terminal."""
+"""Ponto de entrada do protótipo executado pelo terminal.
+
+Uso::
+
+    python main.py                       # modo interativo
+    python main.py --test                # roda data/teste_manual.csv inteiro
+    python main.py --threshold 0.55      # ativa o modo experimental de rejeição
+
+As análises experimentais da Semana 2 ficam em ``evaluate.py``. Este arquivo
+preserva a demonstração interativa da Semana 1.
+"""
 
 from __future__ import annotations
 
 import argparse
-from typing import Any, Dict
-
-import pandas as pd
+import sys
+from pathlib import Path
+from typing import Any, Dict, Optional
 
 from src.classifier import PuzzleClassifier
-from src.config import DATASET_PATH, MANUAL_TEST_PATH, TOP_K
+from src.config import (
+    CONJUNTO_COMPLETO,
+    DATASET_PATH,
+    MANUAL_TEST_PATH,
+    MODO_PADRAO,
+    MODO_REJEICAO,
+    TOP_K,
+)
+from src.dataset import carregar_avaliacao
+from src.evaluation import avaliar_classificador, imprimir_relatorio
 from src.responses import obter_dica
+
+
+class ClassificadorDemonstracao:
+    """Adaptador que fixa modo e limiar, expondo a interface de avaliação."""
+
+    def __init__(
+        self,
+        classificador: PuzzleClassifier,
+        modo: str = MODO_PADRAO,
+        threshold: Optional[float] = None,
+    ) -> None:
+        self.classificador = classificador
+        self.modo = modo
+        self.threshold = threshold
+
+    @property
+    def descricao(self) -> str:
+        if self.modo == MODO_REJEICAO:
+            return f"Embeddings com rejeicao (threshold {self.threshold:.2f})"
+        return "Embeddings sem threshold"
+
+    def classificar(self, pergunta: str) -> Dict[str, Any]:
+        return self.classificador.classificar(pergunta, self.modo, self.threshold)
+
+    def classificar_em_lote(self, perguntas) -> list[Dict[str, Any]]:
+        return self.classificador.classificar_em_lote(perguntas, self.modo, self.threshold)
 
 
 def exibir_resultado(resultado: Dict[str, Any]) -> None:
@@ -20,7 +65,13 @@ def exibir_resultado(resultado: Dict[str, Any]) -> None:
     print(resultado["frase_referencia"])
     print(f"\nToken identificado:\n{resultado['token']}")
     print(f"\nSimilaridade:\n{resultado['similaridade']:.4f}")
-    print(f"\nTop {TOP_K} resultados:")
+    if resultado.get("rejeitada"):
+        print(
+            f"\nA pergunta foi rejeitada: a similaridade ficou abaixo do limiar "
+            f"de {resultado['threshold']:.2f}."
+        )
+        print(f"Intenção mais próxima descartada: {resultado['token_intencao']}")
+    print(f"\nTop {len(resultado['top_resultados'])} resultados:")
     for posicao, item in enumerate(resultado["top_resultados"], start=1):
         print(f"\n{posicao}. {item['token']} | {item['similaridade']:.4f}")
         print(f"   {item['frase']}")
@@ -28,67 +79,35 @@ def exibir_resultado(resultado: Dict[str, Any]) -> None:
     print("----------------------------------------")
 
 
-def executar_teste_manual(classificador: PuzzleClassifier) -> None:
-    """Executa o conjunto manual e imprime uma métrica exploratória."""
-    try:
-        dataset = pd.read_csv(MANUAL_TEST_PATH)
-    except FileNotFoundError as exc:
-        raise FileNotFoundError(
-            f"Dataset manual não encontrado: {MANUAL_TEST_PATH}"
-        ) from exc
-    except pd.errors.EmptyDataError as exc:
-        raise ValueError("O dataset manual está vazio.") from exc
+def executar_teste_manual(
+    classificador: ClassificadorDemonstracao,
+    caminho: Path = MANUAL_TEST_PATH,
+) -> None:
+    """Executa todo o conjunto manual e imprime o relatório de avaliação.
 
-    colunas = {"frase", "token_esperado"}
-    if not colunas.issubset(dataset.columns):
-        faltantes = sorted(colunas - set(dataset.columns))
-        raise ValueError(f"Colunas obrigatórias ausentes no dataset manual: {faltantes}")
-    if dataset.empty:
-        raise ValueError("O dataset manual não possui registros.")
-
-    erros = []
-    acertos = 0
-    for _, registro in dataset.iterrows():
-        pergunta = str(registro["frase"])
-        token_esperado = str(registro["token_esperado"])
-        resultado = classificador.classificar(pergunta)
-        if resultado["token"] == token_esperado:
-            acertos += 1
-        else:
-            erros.append(
-                {
-                    "pergunta": pergunta,
-                    "token_esperado": token_esperado,
-                    "token_previsto": resultado["token"],
-                    "similaridade": resultado["similaridade"],
-                }
-            )
-
-    total = len(dataset)
-    acuracia = acertos / total if total else 0.0
-    print("\n========================================")
-    print("        TESTE MANUAL EXPLORATÓRIO")
-    print("========================================")
-    print(f"Total de perguntas: {total}")
-    print(f"Acertos: {acertos}")
-    print(f"Erros: {len(erros)}")
-    print(f"Acurácia preliminar: {acuracia:.2%}")
-    print("\nErros:")
-    if not erros:
-        print("Nenhum erro encontrado.")
-    else:
-        for erro in erros:
-            print(f"\nPergunta: {erro['pergunta']}")
-            print(f"Token esperado: {erro['token_esperado']}")
-            print(f"Token previsto: {erro['token_previsto']}")
-            print(f"Similaridade: {erro['similaridade']:.4f}")
+    Reutiliza o módulo de avaliação, portanto as métricas são as mesmas
+    produzidas por ``evaluate.py`` quando aplicadas ao conjunto completo.
+    """
+    dataset = carregar_avaliacao(caminho)
+    resultado = avaliar_classificador(
+        classificador,
+        dataset,
+        metodo=classificador.descricao,
+        conjunto=CONJUNTO_COMPLETO,
+    )
+    imprimir_relatorio(resultado)
+    print(
+        "\nObservacao: este conjunto reune validacao e teste. Para a avaliacao "
+        "experimental com particoes separadas, use evaluate.py."
+    )
 
 
-def executar_interativo(classificador: PuzzleClassifier) -> None:
+def executar_interativo(classificador: ClassificadorDemonstracao) -> None:
     """Executa o modo interativo até o comando sair ou EOF."""
     print("========================================")
     print("     SISTEMA DE DICAS - PROTÓTIPO")
     print("========================================")
+    print(f"Modo: {classificador.descricao}")
     print("Digite 'sair' para encerrar.")
 
     while True:
@@ -108,24 +127,54 @@ def executar_interativo(classificador: PuzzleClassifier) -> None:
         exibir_resultado(classificador.classificar(pergunta))
 
 
-def main() -> int:
-    """Executa o modo interativo ou o teste manual conforme o argumento."""
+def construir_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Protótipo de dicas por embeddings.")
     parser.add_argument(
         "--test",
         action="store_true",
         help="Executa as perguntas de data/teste_manual.csv.",
     )
-    args = parser.parse_args()
+    parser.add_argument(
+        "--threshold",
+        type=float,
+        default=None,
+        help=(
+            "Ativa o modo experimental de rejeição com o limiar informado. "
+            "Sem este argumento, vale a maior similaridade (comportamento padrão)."
+        ),
+    )
+    parser.add_argument(
+        "--referencia",
+        type=Path,
+        default=DATASET_PATH,
+        help="CSV de frases de referência.",
+    )
+    parser.add_argument(
+        "--top-k",
+        type=int,
+        default=TOP_K,
+        help="Quantidade de frases de referência exibidas no ranking.",
+    )
+    return parser
+
+
+def main(argv: Optional[list[str]] = None) -> int:
+    """Executa o modo interativo ou o teste manual conforme os argumentos."""
+    args = construir_parser().parse_args(argv)
 
     try:
-        classificador = PuzzleClassifier(DATASET_PATH)
+        modo = MODO_REJEICAO if args.threshold is not None else MODO_PADRAO
+        classificador = ClassificadorDemonstracao(
+            PuzzleClassifier(args.referencia, top_k=args.top_k),
+            modo=modo,
+            threshold=args.threshold,
+        )
         if args.test:
             executar_teste_manual(classificador)
         else:
             executar_interativo(classificador)
-    except (FileNotFoundError, ValueError, RuntimeError, ImportError) as exc:
-        print(f"Erro ao iniciar o protótipo: {exc}")
+    except (FileNotFoundError, ValueError, RuntimeError, ImportError, OSError) as exc:
+        print(f"Erro ao iniciar o protótipo: {exc}", file=sys.stderr)
         return 1
     return 0
 

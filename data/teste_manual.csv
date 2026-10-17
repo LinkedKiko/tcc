@@ -1,36 +1,101 @@
-frase,token_esperado
-Será que aquilo escrito perto da saída mostra a ordem da combinação?,TOKEN_SIMBOLOS
-Os sinais desenhados junto à entrada revelam quais teclas usar?,TOKEN_SIMBOLOS
-Como interpretar os traços que aparecem na parede?,TOKEN_SIMBOLOS
-A marcação próxima da porta pode indicar uma sequência numérica?,TOKEN_SIMBOLOS
-Esses desenhos misteriosos ajudam a escolher os números do painel?,TOKEN_SIMBOLOS
-Talvez essa coleção de animais funcione como um dicionário?,TOKEN_LIVRO
-Onde encontro no volume a explicação para os sinais estranhos?,TOKEN_LIVRO
-A obra ilustrada pode ensinar a correspondência entre criaturas e símbolos?,TOKEN_LIVRO
-Devo procurar uma tradução dentro das páginas sobre bichos?,TOKEN_LIVRO
-Que informação da enciclopédia pode esclarecer a linguagem da sala?,TOKEN_LIVRO
-Será que preciso descobrir quantas criaturas de cada tipo aparecem na imagem?,TOKEN_MURAL
-A cena incompleta esconde valores nas quantidades dos bichos?,TOKEN_MURAL
-Como usar os grupos de animais representados no painel quebrado?,TOKEN_MURAL
-As figuras repetidas no desenho podem virar algarismos?,TOKEN_MURAL
-Contar cada espécie retratada ajuda a completar a sequência?,TOKEN_MURAL
-Tem alguma coisa guardada nessa caixa que eu preciso para continuar?,TOKEN_COFRE
-A caixa trancada contém a parte que falta da investigação?,TOKEN_COFRE
-Que pista posso encontrar depois de conseguir abrir o compartimento?,TOKEN_COFRE
-A fotografia escondida pode completar a imagem danificada?,TOKEN_COFRE
-Onde está o objeto que revela o trecho ausente do painel?,TOKEN_COFRE
-Esse horário congelado pode ser uma combinação?,TOKEN_RELOGIO
-Os ponteiros parados fornecem os números da abertura?,TOKEN_RELOGIO
-"Devo separar o mostrador em horas, minutos e segundos?",TOKEN_RELOGIO
-A marcação temporal fixa tem utilidade para a caixa trancada?,TOKEN_RELOGIO
-Como transformar o instante exibido em uma senha?,TOKEN_RELOGIO
-Qual é a capital da Argentina?,TOKEN_NAO_RELACIONADO
-Você conhece uma boa receita de lasanha?,TOKEN_NAO_RELACIONADO
-Como posso melhorar minha escrita acadêmica?,TOKEN_NAO_RELACIONADO
-Qual planeta possui os anéis mais conhecidos?,TOKEN_NAO_RELACIONADO
-Que livro de ficção você recomenda?,TOKEN_NAO_RELACIONADO
-Como calcular a área de um triângulo?,TOKEN_NAO_RELACIONADO
-Qual foi o resultado da última corrida?,TOKEN_NAO_RELACIONADO
-Que exercícios ajudam a aprender violão?,TOKEN_NAO_RELACIONADO
-Por que o céu muda de cor ao entardecer?,TOKEN_NAO_RELACIONADO
-Como organizar meus arquivos no computador?,TOKEN_NAO_RELACIONADO
+frase,token_esperado,dificuldade
+Como interpretar os traços que aparecem na parede?,TOKEN_SIMBOLOS,facil
+Esses desenhos misteriosos ajudam a escolher os números do painel?,TOKEN_SIMBOLOS,facil
+Os símbolos riscados na parede precisam ser decifrados antes de usar o painel?,TOKEN_SIMBOLOS,facil
+Devo anotar a ordem exata dos símbolos antes de digitar no painel?,TOKEN_SIMBOLOS,facil
+Esses símbolos ao lado da entrada correspondem a dígitos?,TOKEN_SIMBOLOS,facil
+Será que aquilo escrito perto da saída mostra a ordem da combinação?,TOKEN_SIMBOLOS,media
+Os sinais desenhados junto à entrada revelam quais teclas usar?,TOKEN_SIMBOLOS,media
+A marcação próxima da porta pode indicar uma sequência numérica?,TOKEN_SIMBOLOS,media
+Os rabiscos gravados perto da fechadura eletrônica apontam uma ordem?,TOKEN_SIMBOLOS,media
+Preciso decifrar aquela anotação antiga para liberar a passagem?,TOKEN_SIMBOLOS,media
+Aquela inscrição estranha na superfície vertical serve de orientação?,TOKEN_SIMBOLOS,dificil
+Existe alguma informação visível na sala que diz em que ordem digitar os valores?,TOKEN_SIMBOLOS,dificil
+O que exatamente devo decifrar para conseguir liberar a saída?,TOKEN_SIMBOLOS,dificil
+Aquela mensagem incompreensível ao lado da entrada tem alguma utilidade prática?,TOKEN_SIMBOLOS,dificil
+A ordem em que as marcas aparecem altera o resultado?,TOKEN_SIMBOLOS,dificil
+Devo procurar uma tradução dentro das páginas sobre bichos?,TOKEN_LIVRO,facil
+Que informação da enciclopédia pode esclarecer a linguagem da sala?,TOKEN_LIVRO,facil
+O livro de animais serve para descobrir o nome de cada símbolo?,TOKEN_LIVRO,facil
+Preciso folhear a enciclopédia até achar o bicho certo?,TOKEN_LIVRO,facil
+Há algo útil nas páginas do livro sobre a escrita da parede?,TOKEN_LIVRO,facil
+Talvez essa coleção de animais funcione como um dicionário?,TOKEN_LIVRO,media
+Onde encontro no volume a explicação para os sinais estranhos?,TOKEN_LIVRO,media
+A obra ilustrada pode ensinar a correspondência entre criaturas e símbolos?,TOKEN_LIVRO,media
+Esse livro antigo explica o alfabeto usado na sala?,TOKEN_LIVRO,media
+Aquele catálogo de bichos ajuda a entender os sinais da sala?,TOKEN_LIVRO,media
+Existe algum material de consulta que relacione cada criatura ao seu sinal?,TOKEN_LIVRO,dificil
+Onde encontro uma referência escrita que explique essa linguagem?,TOKEN_LIVRO,dificil
+Tem algum item na sala que funcione como guia de tradução?,TOKEN_LIVRO,dificil
+Como eu descubro a correspondência entre os nomes dos animais e aquela escrita?,TOKEN_LIVRO,dificil
+Será que alguma leitura disponível aqui esclarece esse idioma inventado?,TOKEN_LIVRO,dificil
+As figuras repetidas no desenho podem virar algarismos?,TOKEN_MURAL,facil
+Contar cada espécie retratada ajuda a completar a sequência?,TOKEN_MURAL,facil
+Preciso contar quantas libélulas estão no mural?,TOKEN_MURAL,facil
+A quantidade de cada animal do mural equivale a um número?,TOKEN_MURAL,facil
+O mural quebrado mostra quantas figuras de cada tipo existem?,TOKEN_MURAL,facil
+Será que preciso descobrir quantas criaturas de cada tipo aparecem na imagem?,TOKEN_MURAL,media
+A cena incompleta esconde valores nas quantidades dos bichos?,TOKEN_MURAL,media
+Como usar os grupos de animais representados no painel quebrado?,TOKEN_MURAL,media
+Os grupos de bichos retratados equivalem a algarismos?,TOKEN_MURAL,media
+Repetições das criaturas naquela ilustração têm significado numérico?,TOKEN_MURAL,media
+Será que a repetição de cada espécie indica algum valor?,TOKEN_MURAL,dificil
+Como eu transformo o que está retratado em números?,TOKEN_MURAL,dificil
+A soma de cada tipo de criatura importa para a solução?,TOKEN_MURAL,dificil
+Preciso somar quantos bichos iguais aparecem ali?,TOKEN_MURAL,dificil
+Aquela arte danificada guarda os valores que procuro?,TOKEN_MURAL,dificil
+Tem alguma coisa guardada nessa caixa que eu preciso para continuar?,TOKEN_COFRE,facil
+A caixa trancada contém a parte que falta da investigação?,TOKEN_COFRE,facil
+Que pista posso encontrar depois de conseguir abrir o compartimento?,TOKEN_COFRE,facil
+Como consigo abrir o cofre da sala?,TOKEN_COFRE,facil
+Vale a pena destrancar o cofre antes de mexer na porta?,TOKEN_COFRE,facil
+A fotografia escondida pode completar a imagem danificada?,TOKEN_COFRE,media
+Esse recipiente fechado com cadeado esconde alguma informação?,TOKEN_COFRE,media
+Preciso de um código para destrancar aquele móvel pequeno?,TOKEN_COFRE,media
+O que o cadeado numérico está protegendo?,TOKEN_COFRE,media
+A imagem guardada ali completa a parte que falta?,TOKEN_COFRE,media
+Onde está o objeto que revela o trecho ausente do painel?,TOKEN_COFRE,dificil
+Existe algo fechado aqui que eu ainda não consegui acessar?,TOKEN_COFRE,dificil
+Onde encontro o pedaço que está faltando na ilustração?,TOKEN_COFRE,dificil
+Aquele objeto lacrado guarda o que falta para o enigma?,TOKEN_COFRE,dificil
+Como descubro os números necessários para liberar o conteúdo escondido?,TOKEN_COFRE,dificil
+Esse horário congelado pode ser uma combinação?,TOKEN_RELOGIO,facil
+Os ponteiros parados fornecem os números da abertura?,TOKEN_RELOGIO,facil
+"Devo separar o mostrador em horas, minutos e segundos?",TOKEN_RELOGIO,facil
+O relógio que não funciona mais esconde algum código?,TOKEN_RELOGIO,facil
+As horas indicadas no relógio servem para o cofre?,TOKEN_RELOGIO,facil
+A marcação temporal fixa tem utilidade para a caixa trancada?,TOKEN_RELOGIO,media
+Aquele aparelho de medir o tempo paralisado é uma dica?,TOKEN_RELOGIO,media
+A posição em que os indicadores travaram significa algo?,TOKEN_RELOGIO,media
+O instrumento pendurado que marca o tempo ajuda no enigma?,TOKEN_RELOGIO,media
+Será que o momento registrado ali vira uma sequência numérica?,TOKEN_RELOGIO,media
+Como transformar o instante exibido em uma senha?,TOKEN_RELOGIO,dificil
+Por que esse objeto antigo pendurado não se move mais?,TOKEN_RELOGIO,dificil
+Aquilo que marca o tempo na sala guarda três valores úteis?,TOKEN_RELOGIO,dificil
+O instante em que tudo paralisou tem relação com a abertura?,TOKEN_RELOGIO,dificil
+Como uso aquilo que está travado para descobrir a combinação?,TOKEN_RELOGIO,dificil
+Qual é a capital da Argentina?,TOKEN_NAO_RELACIONADO,facil
+Você conhece uma boa receita de lasanha?,TOKEN_NAO_RELACIONADO,facil
+Qual planeta possui os anéis mais conhecidos?,TOKEN_NAO_RELACIONADO,facil
+Como calcular a área de um triângulo?,TOKEN_NAO_RELACIONADO,facil
+Qual foi o resultado da última corrida?,TOKEN_NAO_RELACIONADO,facil
+Que exercícios ajudam a aprender violão?,TOKEN_NAO_RELACIONADO,facil
+Por que o céu muda de cor ao entardecer?,TOKEN_NAO_RELACIONADO,facil
+Qual é a moeda oficial do Japão?,TOKEN_NAO_RELACIONADO,facil
+Como faço para trocar o pneu de um carro?,TOKEN_NAO_RELACIONADO,facil
+Qual a melhor época para visitar a Patagônia?,TOKEN_NAO_RELACIONADO,facil
+Como se calcula o juros composto de um empréstimo?,TOKEN_NAO_RELACIONADO,facil
+Que série de televisão está em alta agora?,TOKEN_NAO_RELACIONADO,facil
+Como cuidar de uma suculenta em apartamento?,TOKEN_NAO_RELACIONADO,facil
+Quais são os sintomas de desidratação?,TOKEN_NAO_RELACIONADO,facil
+Como organizar meus arquivos no computador?,TOKEN_NAO_RELACIONADO,media
+Quantos jogadores tem um time de vôlei?,TOKEN_NAO_RELACIONADO,media
+Quem pintou a Mona Lisa?,TOKEN_NAO_RELACIONADO,media
+Onde fica guardada a documentação do meu veículo?,TOKEN_NAO_RELACIONADO,media
+Como desenhar um retrato realista a lápis?,TOKEN_NAO_RELACIONADO,media
+Como posso melhorar minha escrita acadêmica?,TOKEN_NAO_RELACIONADO,dificil
+Que livro de ficção você recomenda?,TOKEN_NAO_RELACIONADO,dificil
+Que horário costuma ter menos trânsito na cidade?,TOKEN_NAO_RELACIONADO,dificil
+Como criar uma senha realmente segura para o banco?,TOKEN_NAO_RELACIONADO,dificil
+Quantas espécies de aves existem no Brasil?,TOKEN_NAO_RELACIONADO,dificil
+Qual é a sequência correta para montar um móvel?,TOKEN_NAO_RELACIONADO,dificil
