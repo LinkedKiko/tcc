@@ -1,0 +1,16 @@
+id,pergunta,token_esperado,subintencao,criterio
+1,Como consigo a senha do cofre?,TOKEN_COFRE,senha,relógio sem combinação explícita
+2,Como encontro a combinação do cofre?,TOKEN_COFRE,senha,relógio sem combinação explícita
+3,Qual relógio fornece o código do cofre?,TOKEN_RELOGIO,combinacao,relógio e cofre
+4,O que existe dentro do cofre?,TOKEN_COFRE,conteudo,progressão segura
+5,Para que serve o cofre?,TOKEN_COFRE,finalidade,papel na progressão
+6,Como faço para abrir o cofre?,TOKEN_COFRE,abertura,painel e procedimento
+7,Como os ponteiros ajudam a descobrir a senha?,TOKEN_RELOGIO,combinacao,relação com combinação
+8,Como devo contar os animais?,TOKEN_MURAL,contagem,procedimento de contagem
+9,Qual parte do mural está faltando?,TOKEN_MURAL,fotografia,parte ausente
+10,Como associar animais e símbolos?,TOKEN_LIVRO,associacao,correspondência da enciclopédia
+11,O que contém a enciclopédia?,TOKEN_LIVRO,conteudo,informação sem senha
+12,Como descubro o significado dos símbolos?,TOKEN_SIMBOLOS,significado,interpretação dos símbolos
+13,Qual é a ordem dos símbolos da parede?,TOKEN_SIMBOLOS,ordem,sequência preservada
+14,Como uso a sequência para abrir a porta?,TOKEN_SIMBOLOS,utilizacao,relação com porta
+15,Como criar uma senha segura para o banco?,TOKEN_NAO_RELACIONADO,rejeicao,rejeição sem redirecionamento

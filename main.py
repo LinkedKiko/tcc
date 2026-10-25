@@ -28,7 +28,7 @@ from src.config import (
 )
 from src.dataset import carregar_avaliacao
 from src.evaluation import avaliar_classificador, imprimir_relatorio
-from src.responses import obter_dica
+from src.game import HintManager
 
 
 class ClassificadorDemonstracao:
@@ -57,8 +57,17 @@ class ClassificadorDemonstracao:
         return self.classificador.classificar_em_lote(perguntas, self.modo, self.threshold)
 
 
-def exibir_resultado(resultado: Dict[str, Any]) -> None:
-    """Exibe uma classificação no formato definido para a demonstração."""
+def exibir_resultado(
+    resultado: Dict[str, Any],
+    hint_manager: Optional[HintManager] = None,
+    estado: Optional[Dict[str, Any]] = None,
+) -> None:
+    """Exibe uma classificação com a dica contextual predefinida.
+
+    ``hint_manager`` e ``estado`` são opcionais para preservar o uso público
+    anterior desta função. O demonstrador antigo não mantém uma partida, então
+    sem estado a seleção usa somente o token e o conteúdo da pergunta.
+    """
     print("\n----------------------------------------")
     print(f"Pergunta:\n{resultado['pergunta']}")
     print("\nFrase de referência mais próxima:")
@@ -75,7 +84,11 @@ def exibir_resultado(resultado: Dict[str, Any]) -> None:
     for posicao, item in enumerate(resultado["top_resultados"], start=1):
         print(f"\n{posicao}. {item['token']} | {item['similaridade']:.4f}")
         print(f"   {item['frase']}")
-    print(f"\nDica:\n{obter_dica(resultado['token'])}")
+    manager = hint_manager or HintManager()
+    dica = manager.selecionar_dica(
+        resultado["token"], resultado.get("pergunta", ""), estado
+    )
+    print(f"\nDica:\n{dica}")
     print("----------------------------------------")
 
 
@@ -110,6 +123,7 @@ def executar_interativo(classificador: ClassificadorDemonstracao) -> None:
     print(f"Modo: {classificador.descricao}")
     print("Digite 'sair' para encerrar.")
 
+    hint_manager = HintManager()
     while True:
         try:
             pergunta = input("\nDigite sua pergunta:\n> ")
@@ -124,7 +138,7 @@ def executar_interativo(classificador: ClassificadorDemonstracao) -> None:
             print("A pergunta não pode ser vazia.")
             continue
 
-        exibir_resultado(classificador.classificar(pergunta))
+        exibir_resultado(classificador.classificar(pergunta), hint_manager)
 
 
 def construir_parser() -> argparse.ArgumentParser:

@@ -13,6 +13,7 @@ DOCS_DIR = PROJECT_ROOT / "docs"
 
 DATASET_PATH = DATA_DIR / "frases_referencia.csv"
 MANUAL_TEST_PATH = DATA_DIR / "teste_manual.csv"
+PUZZLE_CONFIG_PATH = DATA_DIR / "puzzle_config.json"
 
 # ---------------------------------------------------------------------------
 # Modelo de embeddings

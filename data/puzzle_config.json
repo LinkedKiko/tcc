@@ -1,0 +1,35 @@
+{
+  "nome": "Sala dos Símbolos",
+  "relogio": {
+    "horario": "09:15:30"
+  },
+  "mural": {
+    "animais": {
+      "libelula": {
+        "visivel": 3,
+        "fotografia": 2
+      },
+      "coruja": {
+        "visivel": 1,
+        "fotografia": 1
+      },
+      "tartaruga": {
+        "visivel": 2,
+        "fotografia": 2
+      },
+      "raposa": {
+        "visivel": 1,
+        "fotografia": 2
+      }
+    }
+  },
+  "enciclopedia": {
+    "◆": "libelula",
+    "☼": "coruja",
+    "△": "tartaruga",
+    "✦": "raposa"
+  },
+  "parede": {
+    "sequencia": ["☼", "◆", "✦", "△"]
+  }
+}
