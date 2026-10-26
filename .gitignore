@@ -15,6 +15,7 @@ results/*
 results/semana5/_pytest_*
 results/semana5/benchmark_*.log
 results/semana5/benchmark_*.txt
+results/semana5/benchmark_*.exit
 results/semana5/benchmark_*.meta.txt
 results/semana5/benchmark_final/*
 !results/semana5/benchmark_final/execucao_benchmark_20261026_011428_065614_4b5e8d03/
