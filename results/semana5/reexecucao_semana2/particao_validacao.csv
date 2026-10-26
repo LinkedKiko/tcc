@@ -1,0 +1,41 @@
+frase,token_esperado,dificuldade,particao
+Como interpretar os traços que aparecem na parede?,TOKEN_SIMBOLOS,facil,validacao
+Os símbolos riscados na parede precisam ser decifrados antes de usar o painel?,TOKEN_SIMBOLOS,facil,validacao
+Será que aquilo escrito perto da saída mostra a ordem da combinação?,TOKEN_SIMBOLOS,media,validacao
+Os sinais desenhados junto à entrada revelam quais teclas usar?,TOKEN_SIMBOLOS,media,validacao
+Existe alguma informação visível na sala que diz em que ordem digitar os valores?,TOKEN_SIMBOLOS,dificil,validacao
+Aquela mensagem incompreensível ao lado da entrada tem alguma utilidade prática?,TOKEN_SIMBOLOS,dificil,validacao
+Devo procurar uma tradução dentro das páginas sobre bichos?,TOKEN_LIVRO,facil,validacao
+Onde encontro no volume a explicação para os sinais estranhos?,TOKEN_LIVRO,media,validacao
+Esse livro antigo explica o alfabeto usado na sala?,TOKEN_LIVRO,media,validacao
+Aquele catálogo de bichos ajuda a entender os sinais da sala?,TOKEN_LIVRO,media,validacao
+Existe algum material de consulta que relacione cada criatura ao seu sinal?,TOKEN_LIVRO,dificil,validacao
+Tem algum item na sala que funcione como guia de tradução?,TOKEN_LIVRO,dificil,validacao
+Contar cada espécie retratada ajuda a completar a sequência?,TOKEN_MURAL,facil,validacao
+O mural quebrado mostra quantas figuras de cada tipo existem?,TOKEN_MURAL,facil,validacao
+Como usar os grupos de animais representados no painel quebrado?,TOKEN_MURAL,media,validacao
+Será que a repetição de cada espécie indica algum valor?,TOKEN_MURAL,dificil,validacao
+A soma de cada tipo de criatura importa para a solução?,TOKEN_MURAL,dificil,validacao
+Preciso somar quantos bichos iguais aparecem ali?,TOKEN_MURAL,dificil,validacao
+Tem alguma coisa guardada nessa caixa que eu preciso para continuar?,TOKEN_COFRE,facil,validacao
+A fotografia escondida pode completar a imagem danificada?,TOKEN_COFRE,media,validacao
+O que o cadeado numérico está protegendo?,TOKEN_COFRE,media,validacao
+A imagem guardada ali completa a parte que falta?,TOKEN_COFRE,media,validacao
+Existe algo fechado aqui que eu ainda não consegui acessar?,TOKEN_COFRE,dificil,validacao
+Aquele objeto lacrado guarda o que falta para o enigma?,TOKEN_COFRE,dificil,validacao
+Esse horário congelado pode ser uma combinação?,TOKEN_RELOGIO,facil,validacao
+"Devo separar o mostrador em horas, minutos e segundos?",TOKEN_RELOGIO,facil,validacao
+As horas indicadas no relógio servem para o cofre?,TOKEN_RELOGIO,facil,validacao
+Aquele aparelho de medir o tempo paralisado é uma dica?,TOKEN_RELOGIO,media,validacao
+A posição em que os indicadores travaram significa algo?,TOKEN_RELOGIO,media,validacao
+Por que esse objeto antigo pendurado não se move mais?,TOKEN_RELOGIO,dificil,validacao
+Qual é a capital da Argentina?,TOKEN_NAO_RELACIONADO,facil,validacao
+Qual planeta possui os anéis mais conhecidos?,TOKEN_NAO_RELACIONADO,facil,validacao
+Que exercícios ajudam a aprender violão?,TOKEN_NAO_RELACIONADO,facil,validacao
+Qual é a moeda oficial do Japão?,TOKEN_NAO_RELACIONADO,facil,validacao
+Como se calcula o juros composto de um empréstimo?,TOKEN_NAO_RELACIONADO,facil,validacao
+Como cuidar de uma suculenta em apartamento?,TOKEN_NAO_RELACIONADO,facil,validacao
+Como organizar meus arquivos no computador?,TOKEN_NAO_RELACIONADO,media,validacao
+Quantos jogadores tem um time de vôlei?,TOKEN_NAO_RELACIONADO,media,validacao
+Quem pintou a Mona Lisa?,TOKEN_NAO_RELACIONADO,media,validacao
+Como desenhar um retrato realista a lápis?,TOKEN_NAO_RELACIONADO,media,validacao

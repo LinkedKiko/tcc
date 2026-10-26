@@ -1,0 +1,15 @@
+pergunta,token_esperado,token_previsto,similaridade,categoria_erro,base_categorizacao
+Os rabiscos gravados perto da fechadura eletrônica apontam uma ordem?,TOKEN_SIMBOLOS,TOKEN_COFRE,0.6606742493690875,confusão entre objetos relacionados,triagem por rótulos e termos; requer revisão humana
+O que exatamente devo decifrar para conseguir liberar a saída?,TOKEN_SIMBOLOS,TOKEN_COFRE,0.5474056096828398,formulação vaga ou indireta,triagem por rótulos e termos; requer revisão humana
+O livro de animais serve para descobrir o nome de cada símbolo?,TOKEN_LIVRO,TOKEN_MURAL,0.8010953127728373,sobreposição semântica entre pistas,triagem por rótulos e termos; requer revisão humana
+A obra ilustrada pode ensinar a correspondência entre criaturas e símbolos?,TOKEN_LIVRO,TOKEN_MURAL,0.7305284673207549,sobreposição semântica entre pistas,triagem por rótulos e termos; requer revisão humana
+As figuras repetidas no desenho podem virar algarismos?,TOKEN_MURAL,TOKEN_SIMBOLOS,0.7056383201255205,confusão entre objetos relacionados,triagem por rótulos e termos; requer revisão humana
+Como eu transformo o que está retratado em números?,TOKEN_MURAL,TOKEN_RELOGIO,0.6152156505448847,formulação vaga ou indireta,triagem por rótulos e termos; requer revisão humana
+Vale a pena destrancar o cofre antes de mexer na porta?,TOKEN_COFRE,TOKEN_NAO_RELACIONADO,0.4713383902952075,rejeição indevida,triagem por rótulos e termos; requer revisão humana
+Preciso de um código para destrancar aquele móvel pequeno?,TOKEN_COFRE,TOKEN_NAO_RELACIONADO,0.4687797480771095,rejeição indevida,triagem por rótulos e termos; requer revisão humana
+Os ponteiros parados fornecem os números da abertura?,TOKEN_RELOGIO,TOKEN_COFRE,0.6787058320391561,confusão entre objetos relacionados,triagem por rótulos e termos; requer revisão humana
+O instante em que tudo paralisou tem relação com a abertura?,TOKEN_RELOGIO,TOKEN_COFRE,0.6145149007998432,formulação vaga ou indireta,triagem por rótulos e termos; requer revisão humana
+Como uso aquilo que está travado para descobrir a combinação?,TOKEN_RELOGIO,TOKEN_COFRE,0.6925273262062931,confusão entre objetos relacionados,triagem por rótulos e termos; requer revisão humana
+Que livro de ficção você recomenda?,TOKEN_NAO_RELACIONADO,TOKEN_LIVRO,0.5543342879052173,aceitação indevida,triagem por rótulos e termos; requer revisão humana
+Como criar uma senha realmente segura para o banco?,TOKEN_NAO_RELACIONADO,TOKEN_COFRE,0.5897736259687586,aceitação indevida,triagem por rótulos e termos; requer revisão humana
+Quantas espécies de aves existem no Brasil?,TOKEN_NAO_RELACIONADO,TOKEN_MURAL,0.5861310184977268,aceitação indevida,triagem por rótulos e termos; requer revisão humana

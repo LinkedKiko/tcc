@@ -1,0 +1,61 @@
+frase,token_esperado,token_previsto,similaridade,correto,dificuldade
+Esses desenhos misteriosos ajudam a escolher os números do painel?,TOKEN_SIMBOLOS,TOKEN_SIMBOLOS,,True,facil
+Devo anotar a ordem exata dos símbolos antes de digitar no painel?,TOKEN_SIMBOLOS,TOKEN_SIMBOLOS,,True,facil
+Esses símbolos ao lado da entrada correspondem a dígitos?,TOKEN_SIMBOLOS,TOKEN_SIMBOLOS,,True,facil
+A marcação próxima da porta pode indicar uma sequência numérica?,TOKEN_SIMBOLOS,TOKEN_SIMBOLOS,,True,media
+Os rabiscos gravados perto da fechadura eletrônica apontam uma ordem?,TOKEN_SIMBOLOS,TOKEN_NAO_RELACIONADO,,False,media
+Preciso decifrar aquela anotação antiga para liberar a passagem?,TOKEN_SIMBOLOS,TOKEN_NAO_RELACIONADO,,False,media
+Aquela inscrição estranha na superfície vertical serve de orientação?,TOKEN_SIMBOLOS,TOKEN_NAO_RELACIONADO,,False,dificil
+O que exatamente devo decifrar para conseguir liberar a saída?,TOKEN_SIMBOLOS,TOKEN_NAO_RELACIONADO,,False,dificil
+A ordem em que as marcas aparecem altera o resultado?,TOKEN_SIMBOLOS,TOKEN_NAO_RELACIONADO,,False,dificil
+Que informação da enciclopédia pode esclarecer a linguagem da sala?,TOKEN_LIVRO,TOKEN_LIVRO,,True,facil
+O livro de animais serve para descobrir o nome de cada símbolo?,TOKEN_LIVRO,TOKEN_LIVRO,,True,facil
+Preciso folhear a enciclopédia até achar o bicho certo?,TOKEN_LIVRO,TOKEN_LIVRO,,True,facil
+Há algo útil nas páginas do livro sobre a escrita da parede?,TOKEN_LIVRO,TOKEN_LIVRO,,True,facil
+Talvez essa coleção de animais funcione como um dicionário?,TOKEN_LIVRO,TOKEN_LIVRO,,True,media
+A obra ilustrada pode ensinar a correspondência entre criaturas e símbolos?,TOKEN_LIVRO,TOKEN_LIVRO,,True,media
+Onde encontro uma referência escrita que explique essa linguagem?,TOKEN_LIVRO,TOKEN_SIMBOLOS,,False,dificil
+Como eu descubro a correspondência entre os nomes dos animais e aquela escrita?,TOKEN_LIVRO,TOKEN_SIMBOLOS,,False,dificil
+Será que alguma leitura disponível aqui esclarece esse idioma inventado?,TOKEN_LIVRO,TOKEN_LIVRO,,True,dificil
+As figuras repetidas no desenho podem virar algarismos?,TOKEN_MURAL,TOKEN_MURAL,,True,facil
+Preciso contar quantas libélulas estão no mural?,TOKEN_MURAL,TOKEN_MURAL,,True,facil
+A quantidade de cada animal do mural equivale a um número?,TOKEN_MURAL,TOKEN_MURAL,,True,facil
+Será que preciso descobrir quantas criaturas de cada tipo aparecem na imagem?,TOKEN_MURAL,TOKEN_MURAL,,True,media
+A cena incompleta esconde valores nas quantidades dos bichos?,TOKEN_MURAL,TOKEN_MURAL,,True,media
+Os grupos de bichos retratados equivalem a algarismos?,TOKEN_MURAL,TOKEN_NAO_RELACIONADO,,False,media
+Repetições das criaturas naquela ilustração têm significado numérico?,TOKEN_MURAL,TOKEN_MURAL,,True,media
+Como eu transformo o que está retratado em números?,TOKEN_MURAL,TOKEN_NAO_RELACIONADO,,False,dificil
+Aquela arte danificada guarda os valores que procuro?,TOKEN_MURAL,TOKEN_NAO_RELACIONADO,,False,dificil
+A caixa trancada contém a parte que falta da investigação?,TOKEN_COFRE,TOKEN_COFRE,,True,facil
+Que pista posso encontrar depois de conseguir abrir o compartimento?,TOKEN_COFRE,TOKEN_COFRE,,True,facil
+Como consigo abrir o cofre da sala?,TOKEN_COFRE,TOKEN_COFRE,,True,facil
+Vale a pena destrancar o cofre antes de mexer na porta?,TOKEN_COFRE,TOKEN_COFRE,,True,facil
+Esse recipiente fechado com cadeado esconde alguma informação?,TOKEN_COFRE,TOKEN_COFRE,,True,media
+Preciso de um código para destrancar aquele móvel pequeno?,TOKEN_COFRE,TOKEN_NAO_RELACIONADO,,False,media
+Onde está o objeto que revela o trecho ausente do painel?,TOKEN_COFRE,TOKEN_SIMBOLOS,,False,dificil
+Onde encontro o pedaço que está faltando na ilustração?,TOKEN_COFRE,TOKEN_NAO_RELACIONADO,,False,dificil
+Como descubro os números necessários para liberar o conteúdo escondido?,TOKEN_COFRE,TOKEN_NAO_RELACIONADO,,False,dificil
+Os ponteiros parados fornecem os números da abertura?,TOKEN_RELOGIO,TOKEN_RELOGIO,,True,facil
+O relógio que não funciona mais esconde algum código?,TOKEN_RELOGIO,TOKEN_RELOGIO,,True,facil
+A marcação temporal fixa tem utilidade para a caixa trancada?,TOKEN_RELOGIO,TOKEN_COFRE,,False,media
+O instrumento pendurado que marca o tempo ajuda no enigma?,TOKEN_RELOGIO,TOKEN_NAO_RELACIONADO,,False,media
+Será que o momento registrado ali vira uma sequência numérica?,TOKEN_RELOGIO,TOKEN_SIMBOLOS,,False,media
+Como transformar o instante exibido em uma senha?,TOKEN_RELOGIO,TOKEN_NAO_RELACIONADO,,False,dificil
+Aquilo que marca o tempo na sala guarda três valores úteis?,TOKEN_RELOGIO,TOKEN_NAO_RELACIONADO,,False,dificil
+O instante em que tudo paralisou tem relação com a abertura?,TOKEN_RELOGIO,TOKEN_NAO_RELACIONADO,,False,dificil
+Como uso aquilo que está travado para descobrir a combinação?,TOKEN_RELOGIO,TOKEN_RELOGIO,,True,dificil
+Você conhece uma boa receita de lasanha?,TOKEN_NAO_RELACIONADO,TOKEN_NAO_RELACIONADO,,True,facil
+Como calcular a área de um triângulo?,TOKEN_NAO_RELACIONADO,TOKEN_NAO_RELACIONADO,,True,facil
+Qual foi o resultado da última corrida?,TOKEN_NAO_RELACIONADO,TOKEN_NAO_RELACIONADO,,True,facil
+Por que o céu muda de cor ao entardecer?,TOKEN_NAO_RELACIONADO,TOKEN_NAO_RELACIONADO,,True,facil
+Como faço para trocar o pneu de um carro?,TOKEN_NAO_RELACIONADO,TOKEN_NAO_RELACIONADO,,True,facil
+Qual a melhor época para visitar a Patagônia?,TOKEN_NAO_RELACIONADO,TOKEN_NAO_RELACIONADO,,True,facil
+Que série de televisão está em alta agora?,TOKEN_NAO_RELACIONADO,TOKEN_NAO_RELACIONADO,,True,facil
+Quais são os sintomas de desidratação?,TOKEN_NAO_RELACIONADO,TOKEN_NAO_RELACIONADO,,True,facil
+Onde fica guardada a documentação do meu veículo?,TOKEN_NAO_RELACIONADO,TOKEN_COFRE,,False,media
+Como posso melhorar minha escrita acadêmica?,TOKEN_NAO_RELACIONADO,TOKEN_SIMBOLOS,,False,dificil
+Que livro de ficção você recomenda?,TOKEN_NAO_RELACIONADO,TOKEN_LIVRO,,False,dificil
+Que horário costuma ter menos trânsito na cidade?,TOKEN_NAO_RELACIONADO,TOKEN_RELOGIO,,False,dificil
+Como criar uma senha realmente segura para o banco?,TOKEN_NAO_RELACIONADO,TOKEN_NAO_RELACIONADO,,True,dificil
+Quantas espécies de aves existem no Brasil?,TOKEN_NAO_RELACIONADO,TOKEN_MURAL,,False,dificil
+Qual é a sequência correta para montar um móvel?,TOKEN_NAO_RELACIONADO,TOKEN_SIMBOLOS,,False,dificil

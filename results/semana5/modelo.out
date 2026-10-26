@@ -1,0 +1,13 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.7, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\Kleber\AppData\Local\Programs\Python\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Kleber\Desktop\TCC\Repositório
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 3 items
+
+tests/test_integracao_modelo.py::test_modelo_real_gera_embeddings_com_dimensao_consistente PASSED [ 33%]
+tests/test_integracao_modelo.py::test_modelo_real_classifica_e_devolve_similaridade_valida PASSED [ 66%]
+tests/test_integracao_modelo.py::test_modelo_real_em_lote_concorda_com_chamadas_individuais PASSED [100%]
+
+============================= 3 passed in 13.50s ==============================

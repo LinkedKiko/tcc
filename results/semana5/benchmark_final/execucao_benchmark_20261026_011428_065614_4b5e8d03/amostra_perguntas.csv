@@ -1,0 +1,31 @@
+id_pergunta,frase,token_esperado,posicao_original,semente
+linha_73,O instante em que tudo paralisou tem relação com a abertura?,TOKEN_RELOGIO,73,42
+linha_72,Aquilo que marca o tempo na sala guarda três valores úteis?,TOKEN_RELOGIO,72,42
+linha_49,Vale a pena destrancar o cofre antes de mexer na porta?,TOKEN_COFRE,49,42
+linha_84,Qual a melhor época para visitar a Patagônia?,TOKEN_NAO_RELACIONADO,84,42
+linha_41,Como eu transformo o que está retratado em números?,TOKEN_MURAL,41,42
+linha_40,Será que a repetição de cada espécie indica algum valor?,TOKEN_MURAL,40,42
+linha_88,Quais são os sintomas de desidratação?,TOKEN_NAO_RELACIONADO,88,42
+linha_91,Quem pintou a Mona Lisa?,TOKEN_NAO_RELACIONADO,91,42
+linha_19,Há algo útil nas páginas do livro sobre a escrita da parede?,TOKEN_LIVRO,19,42
+linha_63,O relógio que não funciona mais esconde algum código?,TOKEN_RELOGIO,63,42
+linha_89,Como organizar meus arquivos no computador?,TOKEN_NAO_RELACIONADO,89,42
+linha_12,O que exatamente devo decifrar para conseguir liberar a saída?,TOKEN_SIMBOLOS,12,42
+linha_16,Que informação da enciclopédia pode esclarecer a linguagem da sala?,TOKEN_LIVRO,16,42
+linha_24,Aquele catálogo de bichos ajuda a entender os sinais da sala?,TOKEN_LIVRO,24,42
+linha_37,Como usar os grupos de animais representados no painel quebrado?,TOKEN_MURAL,37,42
+linha_8,Os rabiscos gravados perto da fechadura eletrônica apontam uma ordem?,TOKEN_SIMBOLOS,8,42
+linha_29,Será que alguma leitura disponível aqui esclarece esse idioma inventado?,TOKEN_LIVRO,29,42
+linha_51,Esse recipiente fechado com cadeado esconde alguma informação?,TOKEN_COFRE,51,42
+linha_60,Esse horário congelado pode ser uma combinação?,TOKEN_RELOGIO,60,42
+linha_18,Preciso folhear a enciclopédia até achar o bicho certo?,TOKEN_LIVRO,18,42
+linha_3,Devo anotar a ordem exata dos símbolos antes de digitar no painel?,TOKEN_SIMBOLOS,3,42
+linha_46,A caixa trancada contém a parte que falta da investigação?,TOKEN_COFRE,46,42
+linha_5,Será que aquilo escrito perto da saída mostra a ordem da combinação?,TOKEN_SIMBOLOS,5,42
+linha_42,A soma de cada tipo de criatura importa para a solução?,TOKEN_MURAL,42,42
+linha_66,Aquele aparelho de medir o tempo paralisado é uma dica?,TOKEN_RELOGIO,66,42
+linha_98,Quantas espécies de aves existem no Brasil?,TOKEN_NAO_RELACIONADO,98,42
+linha_38,Os grupos de bichos retratados equivalem a algarismos?,TOKEN_MURAL,38,42
+linha_53,O que o cadeado numérico está protegendo?,TOKEN_COFRE,53,42
+linha_57,Onde encontro o pedaço que está faltando na ilustração?,TOKEN_COFRE,57,42
+linha_6,Os sinais desenhados junto à entrada revelam quais teclas usar?,TOKEN_SIMBOLOS,6,42

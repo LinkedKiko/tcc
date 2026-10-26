@@ -1,0 +1,27 @@
+frase,token_esperado,token_previsto,similaridade,correto,dificuldade
+Os rabiscos gravados perto da fechadura eletrônica apontam uma ordem?,TOKEN_SIMBOLOS,TOKEN_NAO_RELACIONADO,,False,media
+Preciso decifrar aquela anotação antiga para liberar a passagem?,TOKEN_SIMBOLOS,TOKEN_NAO_RELACIONADO,,False,media
+Aquela inscrição estranha na superfície vertical serve de orientação?,TOKEN_SIMBOLOS,TOKEN_NAO_RELACIONADO,,False,dificil
+O que exatamente devo decifrar para conseguir liberar a saída?,TOKEN_SIMBOLOS,TOKEN_NAO_RELACIONADO,,False,dificil
+A ordem em que as marcas aparecem altera o resultado?,TOKEN_SIMBOLOS,TOKEN_NAO_RELACIONADO,,False,dificil
+Onde encontro uma referência escrita que explique essa linguagem?,TOKEN_LIVRO,TOKEN_SIMBOLOS,,False,dificil
+Como eu descubro a correspondência entre os nomes dos animais e aquela escrita?,TOKEN_LIVRO,TOKEN_SIMBOLOS,,False,dificil
+Os grupos de bichos retratados equivalem a algarismos?,TOKEN_MURAL,TOKEN_NAO_RELACIONADO,,False,media
+Como eu transformo o que está retratado em números?,TOKEN_MURAL,TOKEN_NAO_RELACIONADO,,False,dificil
+Aquela arte danificada guarda os valores que procuro?,TOKEN_MURAL,TOKEN_NAO_RELACIONADO,,False,dificil
+Preciso de um código para destrancar aquele móvel pequeno?,TOKEN_COFRE,TOKEN_NAO_RELACIONADO,,False,media
+Onde está o objeto que revela o trecho ausente do painel?,TOKEN_COFRE,TOKEN_SIMBOLOS,,False,dificil
+Onde encontro o pedaço que está faltando na ilustração?,TOKEN_COFRE,TOKEN_NAO_RELACIONADO,,False,dificil
+Como descubro os números necessários para liberar o conteúdo escondido?,TOKEN_COFRE,TOKEN_NAO_RELACIONADO,,False,dificil
+A marcação temporal fixa tem utilidade para a caixa trancada?,TOKEN_RELOGIO,TOKEN_COFRE,,False,media
+O instrumento pendurado que marca o tempo ajuda no enigma?,TOKEN_RELOGIO,TOKEN_NAO_RELACIONADO,,False,media
+Será que o momento registrado ali vira uma sequência numérica?,TOKEN_RELOGIO,TOKEN_SIMBOLOS,,False,media
+Como transformar o instante exibido em uma senha?,TOKEN_RELOGIO,TOKEN_NAO_RELACIONADO,,False,dificil
+Aquilo que marca o tempo na sala guarda três valores úteis?,TOKEN_RELOGIO,TOKEN_NAO_RELACIONADO,,False,dificil
+O instante em que tudo paralisou tem relação com a abertura?,TOKEN_RELOGIO,TOKEN_NAO_RELACIONADO,,False,dificil
+Onde fica guardada a documentação do meu veículo?,TOKEN_NAO_RELACIONADO,TOKEN_COFRE,,False,media
+Como posso melhorar minha escrita acadêmica?,TOKEN_NAO_RELACIONADO,TOKEN_SIMBOLOS,,False,dificil
+Que livro de ficção você recomenda?,TOKEN_NAO_RELACIONADO,TOKEN_LIVRO,,False,dificil
+Que horário costuma ter menos trânsito na cidade?,TOKEN_NAO_RELACIONADO,TOKEN_RELOGIO,,False,dificil
+Quantas espécies de aves existem no Brasil?,TOKEN_NAO_RELACIONADO,TOKEN_MURAL,,False,dificil
+Qual é a sequência correta para montar um móvel?,TOKEN_NAO_RELACIONADO,TOKEN_SIMBOLOS,,False,dificil

@@ -1,0 +1,24 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.7, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\Kleber\AppData\Local\Programs\Python\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Kleber\Desktop\TCC\Repositório
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 14 items
+
+tests/test_streamlit_app.py::test_app_inicializa_engine_e_preserva_a_mesma_instancia PASSED [  7%]
+tests/test_streamlit_app.py::test_sessoes_distintas_nao_compartilham_estado PASSED [ 14%]
+tests/test_streamlit_app.py::test_fluxo_dos_objetos_preserva_senhas_como_texto PASSED [ 21%]
+tests/test_streamlit_app.py::test_pergunta_usa_rejeicao_threshold_e_nao_altera_estado PASSED [ 28%]
+tests/test_streamlit_app.py::test_pergunta_nao_relacionada_preserva_mensagem_de_rejeicao PASSED [ 35%]
+tests/test_streamlit_app.py::test_pergunta_vazia_e_rejeitada_antes_do_classificador PASSED [ 42%]
+tests/test_streamlit_app.py::test_reinicio_limpa_estado_e_mensagens_da_partida PASSED [ 50%]
+tests/test_streamlit_app.py::test_vitoria_animada_apenas_uma_vez_e_reinicia PASSED [ 57%]
+tests/test_streamlit_app.py::test_classificador_cacheado_nao_e_instanciado_a_cada_chamada PASSED [ 64%]
+tests/test_streamlit_app.py::test_streamlit_smoke_apresenta_sala_e_objetos PASSED [ 71%]
+tests/test_streamlit_app.py::test_resultado_de_acao_e_preservado_para_o_rerun PASSED [ 78%]
+tests/test_streamlit_app.py::test_fotografia_so_e_renderizada_apos_abertura_do_cofre PASSED [ 85%]
+tests/test_streamlit_app.py::test_estado_lateral_omite_fotografia_antes_de_abrir_cofre PASSED [ 92%]
+tests/test_streamlit_app.py::test_solicitar_dica_preserva_as_quatro_flags_do_estado PASSED [100%]
+
+============================= 14 passed in 1.04s ==============================

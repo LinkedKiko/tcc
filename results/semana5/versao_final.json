@@ -1,0 +1,68 @@
+{
+  "identificador": "tcc-semana5-final",
+  "commit_base": "6a6edacdfdfed8da804e776b06a0b6ad48d2e0d0",
+  "commit_final": null,
+  "tag_final": null,
+  "data_registro": "2026-10-26",
+  "status_git_no_registro": "artefatos_da_semana5_prontos_para_commit_local;_commit_e_tag_ainda_pendentes",
+  "configuracao_preservada": {
+    "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "random_state": 42,
+    "validation_size": 0.4,
+    "similarity_threshold_padrao": null,
+    "threshold_rejeicao_avaliado": 0.5,
+    "modo_interface": "rejeicao"
+  },
+  "ambiente_final": {
+    "python": "3.14.7",
+    "torch": "2.14.1+cpu",
+    "sentence_transformers": "6.1.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "streamlit": "1.66.1",
+    "pytest": "9.1.1",
+    "dispositivo": "cpu"
+  },
+  "hashes_datasets": {
+    "data/frases_referencia.csv": "943cb34419221415de9bc6cbf040a6a1a3e20fbd92269f4df9d47add0ee0a161",
+    "data/teste_manual.csv": "3ddb6b46d4a3032c6d1b4723913eb0ccbbf1b5ff470fade0ff6b502f527443d5",
+    "data/avaliacao_funcional_dicas.csv": "dcc24cc0e7cca841f346a8af1f5a502902472997f97bc274dac97f9f7c2dbbb6",
+    "data/avaliacao_funcional_dicas_resultados.csv": "e8d4bc21788081ce42819207a82ae9ccd9b7adcd589af813529b255b3885bcf9",
+    "data/puzzle_config.json": "bee2226292f666743d6dab69777d3493ff4f3a00da6ec38d508461312346012b"
+  },
+  "hashes_configuracao": {
+    "src/config.py": "27999362e5a174d4f4f69a1fa892cb0df33430780c4f7619661052c2ea6c355f",
+    "requirements.txt": "64632597fc2cc2a581febb7d7e3157d1723147d51152330d2b16bded68797102",
+    "requirements-lock.txt": "774a6adf6e5da2e3a7777b12c87380ca10c41afe761854a9aaa0fee8bf9d88ac"
+  },
+  "execucao_benchmark": {
+    "id_execucao": "benchmark_20261026_011428_065614_4b5e8d03",
+    "diretorio": "results/semana5/benchmark_final/execucao_benchmark_20261026_011428_065614_4b5e8d03",
+    "quantidade_perguntas": 30,
+    "por_classe": 5,
+    "seed": 42,
+    "repeticoes": 30,
+    "aquecimentos": 3,
+    "manifesto_sha256": "c601a8d02f078883d64c11994a50f3108c8ddad3f85213b0a36afba50f13f6b0"
+  },
+  "execucao_reproducao": {
+    "id_execucao": "reproducao_20261025_221810",
+    "diretorio": "results/semana5/reproducao_final",
+    "status": "reprodução concluída",
+    "codigo_saida": 0,
+    "manifesto_sha256": "819abc9d2ab9d38cc7ebef81a00c1da140470bef031ea2e5776aef17d82790db"
+  },
+  "testes_finais": {
+    "relatorio": "results/semana5/testes_finais/relatorio_testes.md",
+    "resumo_json": "results/semana5/testes_finais/resumo_testes.json",
+    "resumo_sha256": "c4c97404c0d1faf1b8c2ebf84da79a6d35464d10e69c92eb6959efb3df49c1a",
+    "suíte_completa": {"coletados": 213, "aprovados": 213, "falhas": 0, "ignorados": 0, "erros": 0, "codigo_saida": 0},
+    "streamlit": {"coletados": 14, "aprovados": 14, "codigo_saida": 0},
+    "integracao_modelo_real": {"coletados": 3, "aprovados": 3, "codigo_saida": 0},
+    "semana5": {"coletados": 11, "aprovados": 11, "codigo_saida": 0}
+  },
+  "observacao": "Datasets e resultados históricos preservados. O commit_final e a tag_final devem ser preenchidos somente após sua criação real no Git; nenhum push remoto foi realizado.",
+  "artefatos": "results/semana5"
+}

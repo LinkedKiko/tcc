@@ -1,0 +1,95 @@
+{
+  "python": "3.14.7",
+  "executavel": "C:\\Users\\Kleber\\Desktop\\TCC\\Repositório\\.venv\\Scripts\\python.exe",
+  "diretorio_trabalho": "C:\\Users\\Kleber\\Desktop\\TCC\\Repositório",
+  "gerado_em_utc": "2026-10-26T01:21:15.897692+00:00",
+  "execucoes": {
+    "pytest_completo": {
+      "comando": [
+        "C:\\Users\\Kleber\\Desktop\\TCC\\Repositório\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=C:\\Users\\Kleber\\Desktop\\TCC\\Repositório\\results\\semana5\\testes_finais\\pytest_completo.xml"
+      ],
+      "inicio_utc": "2026-10-26T01:20:36.448634+00:00",
+      "fim_utc": "2026-10-26T01:20:52.035727+00:00",
+      "duracao_segundos": 15.58707790000335,
+      "codigo_saida": 0,
+      "resumo_junit": {
+        "tests": 213,
+        "passed": 213,
+        "failures": 0,
+        "skipped": 0,
+        "errors": 0
+      }
+    },
+    "pytest_streamlit": {
+      "comando": [
+        "C:\\Users\\Kleber\\Desktop\\TCC\\Repositório\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/test_streamlit_app.py",
+        "-v",
+        "--junitxml=C:\\Users\\Kleber\\Desktop\\TCC\\Repositório\\results\\semana5\\testes_finais/pytest_streamlit.xml"
+      ],
+      "inicio_utc": "2026-10-26T01:20:52.044527+00:00",
+      "fim_utc": "2026-10-26T01:20:55.347505+00:00",
+      "duracao_segundos": 3.3029639000014868,
+      "codigo_saida": 0,
+      "resumo_junit": {
+        "tests": 14,
+        "passed": 14,
+        "failures": 0,
+        "skipped": 0,
+        "errors": 0
+      }
+    },
+    "pytest_integracao_modelo": {
+      "comando": [
+        "C:\\Users\\Kleber\\Desktop\\TCC\\Repositório\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/test_integracao_modelo.py",
+        "-m",
+        "integracao",
+        "-v",
+        "--junitxml=C:\\Users\\Kleber\\Desktop\\TCC\\Repositório\\results\\semana5\\testes_finais/pytest_integracao_modelo.xml"
+      ],
+      "inicio_utc": "2026-10-26T01:20:55.356353+00:00",
+      "fim_utc": "2026-10-26T01:21:08.984381+00:00",
+      "duracao_segundos": 13.628020600001037,
+      "codigo_saida": 0,
+      "resumo_junit": {
+        "tests": 3,
+        "passed": 3,
+        "failures": 0,
+        "skipped": 0,
+        "errors": 0
+      }
+    },
+    "pytest_semana5": {
+      "comando": [
+        "C:\\Users\\Kleber\\Desktop\\TCC\\Repositório\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/test_benchmark_latencia.py",
+        "tests/test_consolidacao_semana5.py",
+        "tests/test_integridade_semana5.py",
+        "-v",
+        "--junitxml=C:\\Users\\Kleber\\Desktop\\TCC\\Repositório\\results\\semana5\\testes_finais/pytest_semana5.xml"
+      ],
+      "inicio_utc": "2026-10-26T01:21:08.993800+00:00",
+      "fim_utc": "2026-10-26T01:21:15.887982+00:00",
+      "duracao_segundos": 6.8941737999994075,
+      "codigo_saida": 0,
+      "resumo_junit": {
+        "tests": 11,
+        "passed": 11,
+        "failures": 0,
+        "skipped": 0,
+        "errors": 0
+      }
+    }
+  }
+}

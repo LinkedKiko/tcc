@@ -1,0 +1,1 @@
+C:\Users\Kleber\Desktop\TCC\Repositório\.venv\Scripts\python.exe evaluate.py --modo completo --resultados C:\Users\Kleber\Desktop\TCC\Repositório\results\semana5\reproducao_final --sem-graficos

@@ -1,0 +1,2 @@
+metodo,conjunto,threshold,total,acertos,erros,acuracia,macro_precision,macro_recall,macro_f1
+Embeddings sem threshold,teste,,60,40,20,0.6666666666666666,0.7150252525252525,0.7037037037037037,0.671173030615755

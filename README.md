@@ -4,10 +4,12 @@ Protótipo e experimentos do TCC de Engenharia de Computação **"Aplicação de
 embeddings semânticos na geração de tokens de decisão para esclarecimento de
 dúvidas em jogos de puzzle"**.
 
-Estado atual: Semana 4. O protótipo interativo das Semanas 1 e 2 e a lógica do
-puzzle da Semana 3 continuam funcionando. A aplicação Streamlit acrescenta uma
-camada web local para explorar a sala, resolver o puzzle e solicitar dicas em
-linguagem natural, sem substituir os componentes experimentais.
+Estado atual: Semana 5 em fechamento experimental. O protótipo das Semanas 1 e
+2, a lógica do puzzle da Semana 3 e a interface Streamlit da Semana 4 continuam
+funcionando. A Semana 5 acrescenta rastreabilidade de dados, reprodução,
+benchmark estratificado, análise funcional e registros estruturados de testes.
+Os resultados históricos são preservados; a validação final só é declarada após
+as execuções registradas em `results/semana5/`.
 
 ---
 
@@ -647,3 +649,100 @@ A avaliação funcional independente das métricas da Semana 2 está documentada
 O relatório técnico das correções, da validação e das limitações da Semana 4 está em [`docs/correcoes_semana4.md`](docs/correcoes_semana4.md). Ele diferencia resultados executados com mocks, testes locais, smoke do Streamlit e integração com o modelo real.
 
 As evidências visuais incluem `01-inicial.png`, `02-relogio.png`, `03-cofre-fechado.png`, `04-cofre-aberto.png`, `05-fotografia.png`, `06-mural-completo.png`, `07-enciclopedia.png`, `08-simbolos.png`, `09-dica.png`, `10-vitoria.png` e `11-reset.png`.
+
+
+## 11. Fechamento experimental da Semana 5
+
+A Semana 5 não altera o classificador, os datasets, o threshold histórico de
+0,50 ou as regras do puzzle. Ela organiza evidências de reprodução, integridade,
+latência, testes e avaliação funcional. Os documentos principais são
+[`docs/protocolo_reproducao_semana5.md`](docs/protocolo_reproducao_semana5.md)
+e [`docs/resultados_discussao_semana5.md`](docs/resultados_discussao_semana5.md).
+
+### Integridade e consolidação
+
+```powershell
+python scripts/validar_integridade_semana5.py
+python scripts/consolidar_resultados_semana5.py
+```
+
+A validação lê `data/frases_referencia.csv`, `data/teste_manual.csv`,
+`data/puzzle_config.json` e os resultados funcionais sem modificá-los. A
+consolidação mantém os resultados históricos em `results/` e grava derivados em
+`results/semana5/`.
+
+### Benchmark de latência
+
+A execução definitiva usa 30 perguntas, cinco por cada um dos seis tokens, seed
+42, 30 repetições e três aquecimentos:
+
+```powershell
+python scripts/benchmark_latencia.py --por-classe 5 --seed 42 --repeticoes 30 --aquecimentos 3
+```
+
+Cada execução cria `results/semana5/benchmark_final/execucao_<id>/` com
+`amostra_perguntas.csv`, `latencia_execucoes.csv`, `latencia_resumo.csv`,
+`ambiente_experimental.json`, `relatorio_latencia.md`,
+`grafico_latencia.svg` e `manifesto_execucao.json`. A amostra é selecionada
+por `token_esperado`, não pelo prefixo do CSV, e os três classificadores usam o
+mesmo conjunto. O parâmetro legado `--max-perguntas` só é aceito quando divide
+o total igualmente entre as seis classes; `--max-perguntas 15` é rejeitado para
+não reintroduzir o viés histórico.
+
+A pasta raiz `results/semana5/` contém a medição preliminar de 15 perguntas de
+uma única classe e não deve ser misturada à execução final. O identificador e os
+hashes de cada execução estão no manifesto correspondente.
+
+### Reprodução dos experimentos históricos
+
+```powershell
+python scripts/executar_reproducao_semana5.py
+```
+
+O comando executa, em diretório separado, o equivalente a:
+
+```powershell
+python evaluate.py --modo completo --resultados results/semana5/reproducao_final --sem-graficos
+```
+
+O manifesto registra código de saída, ambiente, commit, hashes dos datasets,
+arquivos produzidos e comparação com os históricos. O relatório distingue
+reprodução concluída, concluída com divergências e incompleta.
+
+### Testes finais
+
+```powershell
+python scripts/registrar_testes_semana5.py
+```
+
+O registrador executa a suíte completa com JUnit, o Streamlit, a integração com
+o MiniLM real e os testes específicos da Semana 5. Os resultados ficam em
+`results/semana5/testes_finais/`. Execuções direcionadas são relatadas
+separadamente e não são somadas à contagem da suíte completa.
+
+### Resultados experimentais históricos preservados
+
+| Método | Acurácia | Macro F1 |
+|---|---:|---:|
+| Palavras-chave | 56,67% | 0,5904 |
+| Embeddings sem threshold | 66,67% | 0,6712 |
+| Embeddings com threshold 0,50 | 76,67% | 0,7663 |
+
+A avaliação funcional histórica preserva 15 perguntas distintas, 27 cenários,
+20 classificações corretas por cenário, 20 dicas adequadas e 18 sucessos
+completos. Esses números são referências observadas, não saídas forçadas pelo
+programa.
+
+### Reprodutibilidade, limitações e versão
+
+O ambiente de referência está descrito em `results/semana5/` e as versões
+fixadas para instalação estão em `requirements-lock.txt`; o modelo é
+`sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`. A execução é
+sensível a versões do PyTorch/Sentence Transformers, hardware, cache do modelo,
+formulação das perguntas e tamanho do conjunto de teste. A avaliação tem 90
+referências, 100 perguntas e um único puzzle; não demonstra superioridade
+universal nem substitui avaliação com jogadores.
+
+A execução definitiva validada é `benchmark_20261026_011428_065614_4b5e8d03`, em `results/semana5/benchmark_final/execucao_benchmark_20261026_011428_065614_4b5e8d03/`. Ela contém 30 perguntas, cinco por classe, seed 42, 30 repetições e três aquecimentos. A suíte final registrou 213/213 testes aprovados; a integração real do MiniLM registrou 3/3 e o Streamlit 14/14, conforme `results/semana5/testes_finais/`. A reprodução verificável registrou `reproducao_20261025_221810`, código de saída 0 e métricas coincidentes em `results/semana5/reproducao_final/`.
+
+A pasta raiz `results/semana5/` também conserva tentativas incompletas e a medição preliminar de 15 perguntas; elas estão identificadas e não foram somadas aos resultados finais. O identificador documental da versão é `tcc-semana5-final`; o hash do commit e a tag só devem ser afirmados após constarem de `results/semana5/versao_final.json` e do Git.

@@ -1,0 +1,33 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.7, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\Kleber\AppData\Local\Programs\Python\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Kleber\Desktop\TCC\Repositório
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 23 items
+
+tests/test_keyword_classifier.py::test_remover_acentos_preserva_letras_base PASSED [  4%]
+tests/test_keyword_classifier.py::test_normaliza_maiusculas_e_minusculas PASSED [  8%]
+tests/test_keyword_classifier.py::test_normaliza_remove_pontuacao PASSED [ 13%]
+tests/test_keyword_classifier.py::test_normaliza_preserva_numeros PASSED [ 17%]
+tests/test_keyword_classifier.py::test_normalizar_rejeita_valor_nao_textual PASSED [ 21%]
+tests/test_keyword_classifier.py::test_reconhece_palavra_completa PASSED [ 26%]
+tests/test_keyword_classifier.py::test_nao_casa_parte_de_palavra PASSED  [ 30%]
+tests/test_keyword_classifier.py::test_conta_palavras_chave_distintas PASSED [ 34%]
+tests/test_keyword_classifier.py::test_repeticao_do_mesmo_termo_conta_uma_vez PASSED [ 39%]
+tests/test_keyword_classifier.py::test_ausencia_de_correspondencias PASSED [ 43%]
+tests/test_keyword_classifier.py::test_classifica_pelo_maior_numero_de_correspondencias PASSED [ 47%]
+tests/test_keyword_classifier.py::test_sem_correspondencia_retorna_token_nao_relacionado PASSED [ 52%]
+tests/test_keyword_classifier.py::test_similaridade_e_sempre_nula PASSED [ 56%]
+tests/test_keyword_classifier.py::test_empate_segue_ordem_documentada PASSED [ 60%]
+tests/test_keyword_classifier.py::test_empate_e_deterministico PASSED    [ 65%]
+tests/test_keyword_classifier.py::test_pergunta_vazia_e_rejeitada PASSED [ 69%]
+tests/test_keyword_classifier.py::test_pergunta_nao_textual_e_rejeitada PASSED [ 73%]
+tests/test_keyword_classifier.py::test_classificar_em_lote_preserva_a_ordem PASSED [ 78%]
+tests/test_keyword_classifier.py::test_vocabulario_nao_usa_palavras_genericas_criticas PASSED [ 82%]
+tests/test_keyword_classifier.py::test_vocabulario_vazio_gera_erro PASSED [ 86%]
+tests/test_keyword_classifier.py::test_token_sem_palavras_gera_erro PASSED [ 91%]
+tests/test_keyword_classifier.py::test_vocabulario_personalizado_com_expressao_de_duas_palavras PASSED [ 95%]
+tests/test_keyword_classifier.py::test_tokens_extras_entram_na_ordem_de_desempate PASSED [100%]
+
+============================= 23 passed in 0.06s ==============================

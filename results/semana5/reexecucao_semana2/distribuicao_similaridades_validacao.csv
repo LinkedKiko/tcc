@@ -1,0 +1,41 @@
+frase,token_esperado,similaridade_puzzle,relacionada
+Como interpretar os traços que aparecem na parede?,TOKEN_SIMBOLOS,0.8238595137445139,True
+Os símbolos riscados na parede precisam ser decifrados antes de usar o painel?,TOKEN_SIMBOLOS,0.7569259579550951,True
+Será que aquilo escrito perto da saída mostra a ordem da combinação?,TOKEN_SIMBOLOS,0.6541523217944372,True
+Os sinais desenhados junto à entrada revelam quais teclas usar?,TOKEN_SIMBOLOS,0.6566206694746042,True
+Existe alguma informação visível na sala que diz em que ordem digitar os valores?,TOKEN_SIMBOLOS,0.5253249004515957,True
+Aquela mensagem incompreensível ao lado da entrada tem alguma utilidade prática?,TOKEN_SIMBOLOS,0.5190978194917681,True
+Devo procurar uma tradução dentro das páginas sobre bichos?,TOKEN_LIVRO,0.7959253914238458,True
+Onde encontro no volume a explicação para os sinais estranhos?,TOKEN_LIVRO,0.592068938485385,True
+Esse livro antigo explica o alfabeto usado na sala?,TOKEN_LIVRO,0.6661169713931494,True
+Aquele catálogo de bichos ajuda a entender os sinais da sala?,TOKEN_LIVRO,0.6213035479211058,True
+Existe algum material de consulta que relacione cada criatura ao seu sinal?,TOKEN_LIVRO,0.6311741092858175,True
+Tem algum item na sala que funcione como guia de tradução?,TOKEN_LIVRO,0.6768204753189706,True
+Contar cada espécie retratada ajuda a completar a sequência?,TOKEN_MURAL,0.5670612850711291,True
+O mural quebrado mostra quantas figuras de cada tipo existem?,TOKEN_MURAL,0.7269787871111469,True
+Como usar os grupos de animais representados no painel quebrado?,TOKEN_MURAL,0.640861926661413,True
+Será que a repetição de cada espécie indica algum valor?,TOKEN_MURAL,0.5956921175423042,True
+A soma de cada tipo de criatura importa para a solução?,TOKEN_MURAL,0.7623855114319458,True
+Preciso somar quantos bichos iguais aparecem ali?,TOKEN_MURAL,0.7129088507769615,True
+Tem alguma coisa guardada nessa caixa que eu preciso para continuar?,TOKEN_COFRE,0.5839542144562475,True
+A fotografia escondida pode completar a imagem danificada?,TOKEN_COFRE,0.5636897546998288,True
+O que o cadeado numérico está protegendo?,TOKEN_COFRE,0.6018529303381956,True
+A imagem guardada ali completa a parte que falta?,TOKEN_COFRE,0.6394373649319757,True
+Existe algo fechado aqui que eu ainda não consegui acessar?,TOKEN_COFRE,0.5853514744632056,True
+Aquele objeto lacrado guarda o que falta para o enigma?,TOKEN_COFRE,0.7645928416839471,True
+Esse horário congelado pode ser uma combinação?,TOKEN_RELOGIO,0.9302973328771427,True
+"Devo separar o mostrador em horas, minutos e segundos?",TOKEN_RELOGIO,0.7677248618682484,True
+As horas indicadas no relógio servem para o cofre?,TOKEN_RELOGIO,0.9409681280722009,True
+Aquele aparelho de medir o tempo paralisado é uma dica?,TOKEN_RELOGIO,0.6530578664235548,True
+A posição em que os indicadores travaram significa algo?,TOKEN_RELOGIO,0.5798863515158247,True
+Por que esse objeto antigo pendurado não se move mais?,TOKEN_RELOGIO,0.4971723736985552,True
+Qual é a capital da Argentina?,TOKEN_NAO_RELACIONADO,0.24466803974433177,False
+Qual planeta possui os anéis mais conhecidos?,TOKEN_NAO_RELACIONADO,0.3363447972353574,False
+Que exercícios ajudam a aprender violão?,TOKEN_NAO_RELACIONADO,0.18265524115755966,False
+Qual é a moeda oficial do Japão?,TOKEN_NAO_RELACIONADO,0.2907812448186636,False
+Como se calcula o juros composto de um empréstimo?,TOKEN_NAO_RELACIONADO,0.30691970635481935,False
+Como cuidar de uma suculenta em apartamento?,TOKEN_NAO_RELACIONADO,0.319933556220996,False
+Como organizar meus arquivos no computador?,TOKEN_NAO_RELACIONADO,0.2550602851739828,False
+Quantos jogadores tem um time de vôlei?,TOKEN_NAO_RELACIONADO,0.4515002147146147,False
+Quem pintou a Mona Lisa?,TOKEN_NAO_RELACIONADO,0.3640705066445948,False
+Como desenhar um retrato realista a lápis?,TOKEN_NAO_RELACIONADO,0.5076755027518862,False

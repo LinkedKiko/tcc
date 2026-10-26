@@ -1,0 +1,22 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\Kleber\Desktop\TCC\Reposit�rio\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Kleber\Desktop\TCC\Reposit�rio
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 11 items
+
+tests/test_benchmark_latencia.py::test_amostra_estratificada_e_reprodutivel_sem_duplicatas PASSED [  9%]
+tests/test_benchmark_latencia.py::test_amostra_nao_depende_da_ordem_original PASSED [ 18%]
+tests/test_benchmark_latencia.py::test_amostra_informa_classe_insuficiente PASSED [ 27%]
+tests/test_benchmark_latencia.py::test_resumo_calcula_estatisticas_dos_registros_da_mesma_execucao PASSED [ 36%]
+tests/test_benchmark_latencia.py::test_benchmark_mockado_gera_artefatos_associados PASSED [ 45%]
+tests/test_consolidacao_semana5.py::test_consolidacao_preserva_metricas_historicas PASSED [ 54%]
+tests/test_consolidacao_semana5.py::test_consolidacao_mantem_os_14_erros PASSED [ 63%]
+tests/test_consolidacao_semana5.py::test_avaliacao_funcional_preserva_27_cenarios PASSED [ 72%]
+tests/test_integridade_semana5.py::test_normalizacao_eh_apenas_para_comparacao PASSED [ 81%]
+tests/test_integridade_semana5.py::test_integridade_datasets_reais PASSED [ 90%]
+tests/test_integridade_semana5.py::test_integridade_nao_altera_datasets PASSED [100%]
+
+- generated xml file: C:\Users\Kleber\Desktop\TCC\Reposit�rio\results\semana5\testes_finais\pytest_semana5.xml -
+============================= 11 passed in 3.85s ==============================

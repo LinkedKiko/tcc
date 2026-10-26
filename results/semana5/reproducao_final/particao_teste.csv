@@ -1,0 +1,61 @@
+frase,token_esperado,dificuldade,particao
+Esses desenhos misteriosos ajudam a escolher os números do painel?,TOKEN_SIMBOLOS,facil,teste
+Devo anotar a ordem exata dos símbolos antes de digitar no painel?,TOKEN_SIMBOLOS,facil,teste
+Esses símbolos ao lado da entrada correspondem a dígitos?,TOKEN_SIMBOLOS,facil,teste
+A marcação próxima da porta pode indicar uma sequência numérica?,TOKEN_SIMBOLOS,media,teste
+Os rabiscos gravados perto da fechadura eletrônica apontam uma ordem?,TOKEN_SIMBOLOS,media,teste
+Preciso decifrar aquela anotação antiga para liberar a passagem?,TOKEN_SIMBOLOS,media,teste
+Aquela inscrição estranha na superfície vertical serve de orientação?,TOKEN_SIMBOLOS,dificil,teste
+O que exatamente devo decifrar para conseguir liberar a saída?,TOKEN_SIMBOLOS,dificil,teste
+A ordem em que as marcas aparecem altera o resultado?,TOKEN_SIMBOLOS,dificil,teste
+Que informação da enciclopédia pode esclarecer a linguagem da sala?,TOKEN_LIVRO,facil,teste
+O livro de animais serve para descobrir o nome de cada símbolo?,TOKEN_LIVRO,facil,teste
+Preciso folhear a enciclopédia até achar o bicho certo?,TOKEN_LIVRO,facil,teste
+Há algo útil nas páginas do livro sobre a escrita da parede?,TOKEN_LIVRO,facil,teste
+Talvez essa coleção de animais funcione como um dicionário?,TOKEN_LIVRO,media,teste
+A obra ilustrada pode ensinar a correspondência entre criaturas e símbolos?,TOKEN_LIVRO,media,teste
+Onde encontro uma referência escrita que explique essa linguagem?,TOKEN_LIVRO,dificil,teste
+Como eu descubro a correspondência entre os nomes dos animais e aquela escrita?,TOKEN_LIVRO,dificil,teste
+Será que alguma leitura disponível aqui esclarece esse idioma inventado?,TOKEN_LIVRO,dificil,teste
+As figuras repetidas no desenho podem virar algarismos?,TOKEN_MURAL,facil,teste
+Preciso contar quantas libélulas estão no mural?,TOKEN_MURAL,facil,teste
+A quantidade de cada animal do mural equivale a um número?,TOKEN_MURAL,facil,teste
+Será que preciso descobrir quantas criaturas de cada tipo aparecem na imagem?,TOKEN_MURAL,media,teste
+A cena incompleta esconde valores nas quantidades dos bichos?,TOKEN_MURAL,media,teste
+Os grupos de bichos retratados equivalem a algarismos?,TOKEN_MURAL,media,teste
+Repetições das criaturas naquela ilustração têm significado numérico?,TOKEN_MURAL,media,teste
+Como eu transformo o que está retratado em números?,TOKEN_MURAL,dificil,teste
+Aquela arte danificada guarda os valores que procuro?,TOKEN_MURAL,dificil,teste
+A caixa trancada contém a parte que falta da investigação?,TOKEN_COFRE,facil,teste
+Que pista posso encontrar depois de conseguir abrir o compartimento?,TOKEN_COFRE,facil,teste
+Como consigo abrir o cofre da sala?,TOKEN_COFRE,facil,teste
+Vale a pena destrancar o cofre antes de mexer na porta?,TOKEN_COFRE,facil,teste
+Esse recipiente fechado com cadeado esconde alguma informação?,TOKEN_COFRE,media,teste
+Preciso de um código para destrancar aquele móvel pequeno?,TOKEN_COFRE,media,teste
+Onde está o objeto que revela o trecho ausente do painel?,TOKEN_COFRE,dificil,teste
+Onde encontro o pedaço que está faltando na ilustração?,TOKEN_COFRE,dificil,teste
+Como descubro os números necessários para liberar o conteúdo escondido?,TOKEN_COFRE,dificil,teste
+Os ponteiros parados fornecem os números da abertura?,TOKEN_RELOGIO,facil,teste
+O relógio que não funciona mais esconde algum código?,TOKEN_RELOGIO,facil,teste
+A marcação temporal fixa tem utilidade para a caixa trancada?,TOKEN_RELOGIO,media,teste
+O instrumento pendurado que marca o tempo ajuda no enigma?,TOKEN_RELOGIO,media,teste
+Será que o momento registrado ali vira uma sequência numérica?,TOKEN_RELOGIO,media,teste
+Como transformar o instante exibido em uma senha?,TOKEN_RELOGIO,dificil,teste
+Aquilo que marca o tempo na sala guarda três valores úteis?,TOKEN_RELOGIO,dificil,teste
+O instante em que tudo paralisou tem relação com a abertura?,TOKEN_RELOGIO,dificil,teste
+Como uso aquilo que está travado para descobrir a combinação?,TOKEN_RELOGIO,dificil,teste
+Você conhece uma boa receita de lasanha?,TOKEN_NAO_RELACIONADO,facil,teste
+Como calcular a área de um triângulo?,TOKEN_NAO_RELACIONADO,facil,teste
+Qual foi o resultado da última corrida?,TOKEN_NAO_RELACIONADO,facil,teste
+Por que o céu muda de cor ao entardecer?,TOKEN_NAO_RELACIONADO,facil,teste
+Como faço para trocar o pneu de um carro?,TOKEN_NAO_RELACIONADO,facil,teste
+Qual a melhor época para visitar a Patagônia?,TOKEN_NAO_RELACIONADO,facil,teste
+Que série de televisão está em alta agora?,TOKEN_NAO_RELACIONADO,facil,teste
+Quais são os sintomas de desidratação?,TOKEN_NAO_RELACIONADO,facil,teste
+Onde fica guardada a documentação do meu veículo?,TOKEN_NAO_RELACIONADO,media,teste
+Como posso melhorar minha escrita acadêmica?,TOKEN_NAO_RELACIONADO,dificil,teste
+Que livro de ficção você recomenda?,TOKEN_NAO_RELACIONADO,dificil,teste
+Que horário costuma ter menos trânsito na cidade?,TOKEN_NAO_RELACIONADO,dificil,teste
+Como criar uma senha realmente segura para o banco?,TOKEN_NAO_RELACIONADO,dificil,teste
+Quantas espécies de aves existem no Brasil?,TOKEN_NAO_RELACIONADO,dificil,teste
+Qual é a sequência correta para montar um móvel?,TOKEN_NAO_RELACIONADO,dificil,teste

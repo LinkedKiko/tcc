@@ -1,0 +1,61 @@
+frase,token_esperado,token_previsto,similaridade,correto,dificuldade,similaridade_puzzle
+Esses desenhos misteriosos ajudam a escolher os números do painel?,TOKEN_SIMBOLOS,TOKEN_SIMBOLOS,0.6798114269816707,True,facil,0.6798114269816707
+Devo anotar a ordem exata dos símbolos antes de digitar no painel?,TOKEN_SIMBOLOS,TOKEN_SIMBOLOS,0.7134540481120668,True,facil,0.7134540481120668
+Esses símbolos ao lado da entrada correspondem a dígitos?,TOKEN_SIMBOLOS,TOKEN_SIMBOLOS,0.8262677354611553,True,facil,0.8262677354611553
+A marcação próxima da porta pode indicar uma sequência numérica?,TOKEN_SIMBOLOS,TOKEN_SIMBOLOS,0.6827709035493017,True,media,0.6827709035493017
+Os rabiscos gravados perto da fechadura eletrônica apontam uma ordem?,TOKEN_SIMBOLOS,TOKEN_COFRE,0.6606742493690875,False,media,0.6606742493690875
+Preciso decifrar aquela anotação antiga para liberar a passagem?,TOKEN_SIMBOLOS,TOKEN_SIMBOLOS,0.537909612283648,True,media,0.537909612283648
+Aquela inscrição estranha na superfície vertical serve de orientação?,TOKEN_SIMBOLOS,TOKEN_SIMBOLOS,0.5961581954931987,True,dificil,0.5961581954931987
+O que exatamente devo decifrar para conseguir liberar a saída?,TOKEN_SIMBOLOS,TOKEN_COFRE,0.5474056096828398,False,dificil,0.5474056096828398
+A ordem em que as marcas aparecem altera o resultado?,TOKEN_SIMBOLOS,TOKEN_SIMBOLOS,0.6208281338407752,True,dificil,0.6208281338407752
+Que informação da enciclopédia pode esclarecer a linguagem da sala?,TOKEN_LIVRO,TOKEN_LIVRO,0.6324135545952693,True,facil,0.6324135545952693
+O livro de animais serve para descobrir o nome de cada símbolo?,TOKEN_LIVRO,TOKEN_MURAL,0.8010953127728373,False,facil,0.8010953127728373
+Preciso folhear a enciclopédia até achar o bicho certo?,TOKEN_LIVRO,TOKEN_LIVRO,0.7104541074970387,True,facil,0.7104541074970387
+Há algo útil nas páginas do livro sobre a escrita da parede?,TOKEN_LIVRO,TOKEN_LIVRO,0.8259091535109393,True,facil,0.8259091535109393
+Talvez essa coleção de animais funcione como um dicionário?,TOKEN_LIVRO,TOKEN_LIVRO,0.729920363362958,True,media,0.729920363362958
+A obra ilustrada pode ensinar a correspondência entre criaturas e símbolos?,TOKEN_LIVRO,TOKEN_MURAL,0.7305284673207549,False,media,0.7305284673207549
+Onde encontro uma referência escrita que explique essa linguagem?,TOKEN_LIVRO,TOKEN_LIVRO,0.6662408639987749,True,dificil,0.6662408639987749
+Como eu descubro a correspondência entre os nomes dos animais e aquela escrita?,TOKEN_LIVRO,TOKEN_LIVRO,0.7644766171412627,True,dificil,0.7644766171412627
+Será que alguma leitura disponível aqui esclarece esse idioma inventado?,TOKEN_LIVRO,TOKEN_LIVRO,0.7569620774778774,True,dificil,0.7569620774778774
+As figuras repetidas no desenho podem virar algarismos?,TOKEN_MURAL,TOKEN_SIMBOLOS,0.7056383201255205,False,facil,0.7056383201255205
+Preciso contar quantas libélulas estão no mural?,TOKEN_MURAL,TOKEN_MURAL,0.7024736275994368,True,facil,0.7024736275994368
+A quantidade de cada animal do mural equivale a um número?,TOKEN_MURAL,TOKEN_MURAL,0.820251129956571,True,facil,0.820251129956571
+Será que preciso descobrir quantas criaturas de cada tipo aparecem na imagem?,TOKEN_MURAL,TOKEN_MURAL,0.7456105849543777,True,media,0.7456105849543777
+A cena incompleta esconde valores nas quantidades dos bichos?,TOKEN_MURAL,TOKEN_MURAL,0.5929466790167184,True,media,0.5929466790167184
+Os grupos de bichos retratados equivalem a algarismos?,TOKEN_MURAL,TOKEN_MURAL,0.5490824488623697,True,media,0.5490824488623697
+Repetições das criaturas naquela ilustração têm significado numérico?,TOKEN_MURAL,TOKEN_MURAL,0.6846290674280786,True,media,0.6846290674280786
+Como eu transformo o que está retratado em números?,TOKEN_MURAL,TOKEN_RELOGIO,0.6152156505448847,False,dificil,0.6152156505448847
+Aquela arte danificada guarda os valores que procuro?,TOKEN_MURAL,TOKEN_MURAL,0.5597900549915589,True,dificil,0.5597900549915589
+A caixa trancada contém a parte que falta da investigação?,TOKEN_COFRE,TOKEN_COFRE,0.702768099391087,True,facil,0.702768099391087
+Que pista posso encontrar depois de conseguir abrir o compartimento?,TOKEN_COFRE,TOKEN_COFRE,0.7105533119983397,True,facil,0.7105533119983397
+Como consigo abrir o cofre da sala?,TOKEN_COFRE,TOKEN_COFRE,0.8273656305789886,True,facil,0.8273656305789886
+Vale a pena destrancar o cofre antes de mexer na porta?,TOKEN_COFRE,TOKEN_SIMBOLOS,0.4713383902952075,False,facil,0.4713383902952075
+Esse recipiente fechado com cadeado esconde alguma informação?,TOKEN_COFRE,TOKEN_COFRE,0.7205943283084895,True,media,0.7205943283084895
+Preciso de um código para destrancar aquele móvel pequeno?,TOKEN_COFRE,TOKEN_COFRE,0.4687797480771095,True,media,0.4687797480771095
+Onde está o objeto que revela o trecho ausente do painel?,TOKEN_COFRE,TOKEN_COFRE,0.6667454401971386,True,dificil,0.6667454401971386
+Onde encontro o pedaço que está faltando na ilustração?,TOKEN_COFRE,TOKEN_COFRE,0.6354130414428865,True,dificil,0.6354130414428865
+Como descubro os números necessários para liberar o conteúdo escondido?,TOKEN_COFRE,TOKEN_COFRE,0.5638833838318653,True,dificil,0.5638833838318653
+Os ponteiros parados fornecem os números da abertura?,TOKEN_RELOGIO,TOKEN_COFRE,0.6787058320391561,False,facil,0.6787058320391561
+O relógio que não funciona mais esconde algum código?,TOKEN_RELOGIO,TOKEN_RELOGIO,0.8521654055182504,True,facil,0.8521654055182504
+A marcação temporal fixa tem utilidade para a caixa trancada?,TOKEN_RELOGIO,TOKEN_RELOGIO,0.6607058943831324,True,media,0.6607058943831324
+O instrumento pendurado que marca o tempo ajuda no enigma?,TOKEN_RELOGIO,TOKEN_RELOGIO,0.6341866573419295,True,media,0.6341866573419295
+Será que o momento registrado ali vira uma sequência numérica?,TOKEN_RELOGIO,TOKEN_RELOGIO,0.6061234639778479,True,media,0.6061234639778479
+Como transformar o instante exibido em uma senha?,TOKEN_RELOGIO,TOKEN_RELOGIO,0.6210165282795567,True,dificil,0.6210165282795567
+Aquilo que marca o tempo na sala guarda três valores úteis?,TOKEN_RELOGIO,TOKEN_RELOGIO,0.6321621194644312,True,dificil,0.6321621194644312
+O instante em que tudo paralisou tem relação com a abertura?,TOKEN_RELOGIO,TOKEN_COFRE,0.6145149007998432,False,dificil,0.6145149007998432
+Como uso aquilo que está travado para descobrir a combinação?,TOKEN_RELOGIO,TOKEN_COFRE,0.6925273262062931,False,dificil,0.6925273262062931
+Você conhece uma boa receita de lasanha?,TOKEN_NAO_RELACIONADO,TOKEN_NAO_RELACIONADO,0.6092389037852775,True,facil,0.2873403305221333
+Como calcular a área de um triângulo?,TOKEN_NAO_RELACIONADO,TOKEN_MURAL,0.45611414158556995,False,facil,0.45611414158556995
+Qual foi o resultado da última corrida?,TOKEN_NAO_RELACIONADO,TOKEN_NAO_RELACIONADO,0.6961079067726893,True,facil,0.3111113571664077
+Por que o céu muda de cor ao entardecer?,TOKEN_NAO_RELACIONADO,TOKEN_RELOGIO,0.34262315225619966,False,facil,0.34262315225619966
+Como faço para trocar o pneu de um carro?,TOKEN_NAO_RELACIONADO,TOKEN_NAO_RELACIONADO,0.36621498265115066,True,facil,0.22781632096227772
+Qual a melhor época para visitar a Patagônia?,TOKEN_NAO_RELACIONADO,TOKEN_RELOGIO,0.3565081499455396,False,facil,0.3565081499455396
+Que série de televisão está em alta agora?,TOKEN_NAO_RELACIONADO,TOKEN_NAO_RELACIONADO,0.27619043377941904,True,facil,0.25501237909633867
+Quais são os sintomas de desidratação?,TOKEN_NAO_RELACIONADO,TOKEN_NAO_RELACIONADO,0.26464992226001083,True,facil,0.15617434311169934
+Onde fica guardada a documentação do meu veículo?,TOKEN_NAO_RELACIONADO,TOKEN_COFRE,0.4520040678126388,False,media,0.4520040678126388
+Como posso melhorar minha escrita acadêmica?,TOKEN_NAO_RELACIONADO,TOKEN_SIMBOLOS,0.3530468927609491,False,dificil,0.3530468927609491
+Que livro de ficção você recomenda?,TOKEN_NAO_RELACIONADO,TOKEN_LIVRO,0.5543342879052173,False,dificil,0.5543342879052173
+Que horário costuma ter menos trânsito na cidade?,TOKEN_NAO_RELACIONADO,TOKEN_RELOGIO,0.45454434944211264,False,dificil,0.45454434944211264
+Como criar uma senha realmente segura para o banco?,TOKEN_NAO_RELACIONADO,TOKEN_COFRE,0.5897736259687586,False,dificil,0.5897736259687586
+Quantas espécies de aves existem no Brasil?,TOKEN_NAO_RELACIONADO,TOKEN_MURAL,0.5861310184977268,False,dificil,0.5861310184977268
+Qual é a sequência correta para montar um móvel?,TOKEN_NAO_RELACIONADO,TOKEN_RELOGIO,0.36746133953829685,False,dificil,0.36746133953829685

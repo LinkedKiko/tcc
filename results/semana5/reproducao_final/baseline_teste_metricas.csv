@@ -1,0 +1,2 @@
+metodo,conjunto,threshold,total,acertos,erros,acuracia,macro_precision,macro_recall,macro_f1
+Palavras-chave,teste,,60,34,26,0.5666666666666667,0.6619047619047619,0.562962962962963,0.5904431610700961

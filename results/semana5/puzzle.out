@@ -1,0 +1,22 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.7, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\Kleber\AppData\Local\Programs\Python\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Kleber\Desktop\TCC\Repositório
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 12 items
+
+tests/test_puzzle_engine.py::test_configuracao_e_estado_inicial PASSED   [  8%]
+tests/test_puzzle_engine.py::test_configuracao_invalida_e_rejeitada PASSED [ 16%]
+tests/test_puzzle_engine.py::test_configuracao_valida_simbolos_e_totais PASSED [ 25%]
+tests/test_puzzle_engine.py::test_relogio_e_examinacao_nao_alteram_estado PASSED [ 33%]
+tests/test_puzzle_engine.py::test_senhas_preservam_zeros_e_cofre_so_abre_com_senha_derivada PASSED [ 41%]
+tests/test_puzzle_engine.py::test_fotografia_depende_do_cofre_e_e_idempotente PASSED [ 50%]
+tests/test_puzzle_engine.py::test_mural_depende_da_fotografia_e_calcula_totais PASSED [ 58%]
+tests/test_puzzle_engine.py::test_enciclopedia_nao_revela_valores_e_parede_preserva_sequencia PASSED [ 66%]
+tests/test_puzzle_engine.py::test_porta_usa_senha_derivada_e_registra_vitoria PASSED [ 75%]
+tests/test_puzzle_engine.py::test_reinicio_restabelece_estado PASSED     [ 83%]
+tests/test_puzzle_engine.py::test_instancias_nao_compartilham_estado PASSED [ 91%]
+tests/test_puzzle_engine.py::test_configuracao_rejeita_quantidade_negativa_e_simbolo_desconhecido PASSED [100%]
+
+============================= 12 passed in 0.07s ==============================

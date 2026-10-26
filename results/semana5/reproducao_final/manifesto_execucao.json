@@ -1,0 +1,312 @@
+{
+  "id_execucao": "reproducao_20261025_221810",
+  "status": "reprodução concluída",
+  "codigo_saida": 0,
+  "comando": [
+    "PowerShell",
+    "$env:HF_HUB_OFFLINE=1",
+    "$env:TRANSFORMERS_OFFLINE=1",
+    "C:\\Users\\Kleber\\Desktop\\TCC\\Repositório\\.venv\\Scripts\\python.exe",
+    "evaluate.py",
+    "--modo",
+    "completo",
+    "--resultados",
+    "results/semana5/reproducao_final",
+    "--sem-graficos"
+  ],
+  "diretorio_trabalho": "C:\\Users\\Kleber\\Desktop\\TCC\\Repositório",
+  "python_executavel": "C:\\Users\\Kleber\\Desktop\\TCC\\Repositório\\.venv\\Scripts\\python.exe",
+  "python": "3.14.7",
+  "versoes": {
+    "sentence-transformers": "6.1.0",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "pytest": "9.1.1",
+    "streamlit": "1.66.1"
+  },
+  "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "inicio_utc": "2026-10-25T22:18:10.2739713-03:00",
+  "fim_utc": "2026-10-25T22:18:21.8603883-03:00",
+  "duracao_segundos": 11.586416999999999,
+  "commit": "6a6edacdfdfed8da804e776b06a0b6ad48d2e0d0",
+  "hashes_datasets": {
+    "data/frases_referencia.csv": "943cb34419221415de9bc6cbf040a6a1a3e20fbd92269f4df9d47add0ee0a161",
+    "data/teste_manual.csv": "3ddb6b46d4a3032c6d1b4723913eb0ccbbf1b5ff470fade0ff6b502f527443d5"
+  },
+  "artefatos_historicos_nao_confirmados": {
+    "analise_thresholds.csv": {
+      "bytes": 1225,
+      "sha256": "48e46e9e2d1daac7e4ab0d6229a5ba907096616fd7b99ed190b3b4861da48a1d"
+    },
+    "baseline_teste_detalhado.csv": {
+      "bytes": 6364,
+      "sha256": "a805b3f4749973734c32563a6e64076a097e4622244fe1f4d9e3d58989d10fb1"
+    },
+    "baseline_teste_erros.csv": {
+      "bytes": 2899,
+      "sha256": "d6db65beaababc458c199df82abbda259fedfa4943a2de1d39d714a0e3103671"
+    },
+    "baseline_teste_matriz_confusao.csv": {
+      "bytes": 338,
+      "sha256": "9c9df80ee444c30cb9cb790b01ec3c868feb77a05b5160956036436cc3f3dbbb"
+    },
+    "baseline_teste_metricas.csv": {
+      "bytes": 201,
+      "sha256": "3bfcfbe7cc054b6e3b25baac5a4d4682c7e516a3e927f8fdd07d4458c01bc548"
+    },
+    "baseline_teste_por_classe.csv": {
+      "bytes": 530,
+      "sha256": "20af13c0f733a3100fd34a070f73b5805239843c41dbb6f8bef9eadfc19f2ce1"
+    },
+    "comparacao_classificadores.csv": {
+      "bytes": 8632,
+      "sha256": "6cf2a85d56a77ba02d6b943c03e5bbf42a8011ffeb5e19b1061509eaa1c047c7"
+    },
+    "comparacao_metricas.csv": {
+      "bytes": 442,
+      "sha256": "048d25fe437d0af99866d358610d67f956f15e5bb318fc5d4339cf33d878acf5"
+    },
+    "comparacao_resumo.md": {
+      "bytes": 6218,
+      "sha256": "d45772cea9bf396cf1493f66238f409c14b555d96fd09f50b34da91f92f1cc79"
+    },
+    "distribuicao_similaridades_validacao.csv": {
+      "bytes": 3930,
+      "sha256": "acc154692059c54892dde595803d837b5eda14c8e10061e4b1b00e9dfce3cc7b"
+    },
+    "embeddings_teste_detalhado.csv": {
+      "bytes": 8428,
+      "sha256": "aeb65f276269348c0b2d2c5f52ea3730284ad5b6a33d5c3c698b3697b61af5d9"
+    },
+    "embeddings_teste_erros.csv": {
+      "bytes": 2845,
+      "sha256": "6e20c6a1485114e4ed83fcb62bb23d3e851145e815fcf044e0d8c1b0fa97ea94"
+    },
+    "embeddings_teste_matriz_confusao.csv": {
+      "bytes": 338,
+      "sha256": "8461fd162ddd093d9b3f7716e6d79bbea9cf969890f2f47ad7ba63a4726e4149"
+    },
+    "embeddings_teste_metricas.csv": {
+      "bytes": 211,
+      "sha256": "c3b4520ed603e99c71ffc6772bf4c2a7fa9291990d7323647cfa8dbb67899295"
+    },
+    "embeddings_teste_por_classe.csv": {
+      "bytes": 596,
+      "sha256": "9888371c06438db3a44e1e4ca80b2251d8134f40e055b3158d906527dd8f9173"
+    },
+    "embeddings_threshold_teste_detalhado.csv": {
+      "bytes": 8498,
+      "sha256": "08d39a2799a178b5c8b28a8809f8168f3897eadac6b528ed84b48c78650b8ddb"
+    },
+    "embeddings_threshold_teste_erros.csv": {
+      "bytes": 2045,
+      "sha256": "1b84422d44de1789bbc5c865aed405f15c72f4b1b731aff097baa9f6f5dd595e"
+    },
+    "embeddings_threshold_teste_matriz_confusao.csv": {
+      "bytes": 339,
+      "sha256": "07f5ad2561ad5fd8f27b35cbcfc51ca7484aedb098f63f5dadf5cdea3c00cb91"
+    },
+    "embeddings_threshold_teste_metricas.csv": {
+      "bytes": 218,
+      "sha256": "aaebad3a71c8c6825188608df675875ec728a105eba23c58c75bcaad4f0919be"
+    },
+    "embeddings_threshold_teste_por_classe.csv": {
+      "bytes": 644,
+      "sha256": "f5e606f0258c024e9916d27a265760ad352892dbd958efaf6eb426d077ec30ea"
+    },
+    "particao_resumo.csv": {
+      "bytes": 195,
+      "sha256": "cc3f93ab25c8c336d62cc3ad4daec3585e41968dfc54c48b959aadf1369b6a2f"
+    },
+    "particao_teste.csv": {
+      "bytes": 5313,
+      "sha256": "b989127dfed6baf517a0e5257007d5e1a8b4573f01acb8c5a193c5a34e67ae69"
+    },
+    "particao_validacao.csv": {
+      "bytes": 3609,
+      "sha256": "645607ac1b5c578c89a9c5b425ef5420c3ccd52350389e53dd178f8eb8d8915c"
+    },
+    "relatorio_semana2.md": {
+      "bytes": 22988,
+      "sha256": "71474868b6e6dab4b39d5624a69eae36d2e88f57520cf34c41c21503d48d683e"
+    },
+    "threshold_selecionado.csv": {
+      "bytes": 172,
+      "sha256": "a4bdb5df79e17d8ec17d106220a1e7023053fa34a5ff06b71a25d0f1fbbb64a9"
+    },
+    "threshold_selecionado_teste.csv": {
+      "bytes": 384,
+      "sha256": "66a61051dd6770ba8f01c3f578b5fa6245eb42547c1f1e0ef429e324378e549f"
+    }
+  },
+  "arquivos_gerados": {
+    "analise_thresholds.csv": {
+      "bytes": 1225,
+      "sha256": "48e46e9e2d1daac7e4ab0d6229a5ba907096616fd7b99ed190b3b4861da48a1d"
+    },
+    "baseline_teste_detalhado.csv": {
+      "bytes": 6364,
+      "sha256": "a805b3f4749973734c32563a6e64076a097e4622244fe1f4d9e3d58989d10fb1"
+    },
+    "baseline_teste_erros.csv": {
+      "bytes": 2899,
+      "sha256": "d6db65beaababc458c199df82abbda259fedfa4943a2de1d39d714a0e3103671"
+    },
+    "baseline_teste_matriz_confusao.csv": {
+      "bytes": 338,
+      "sha256": "9c9df80ee444c30cb9cb790b01ec3c868feb77a05b5160956036436cc3f3dbbb"
+    },
+    "baseline_teste_metricas.csv": {
+      "bytes": 201,
+      "sha256": "3bfcfbe7cc054b6e3b25baac5a4d4682c7e516a3e927f8fdd07d4458c01bc548"
+    },
+    "baseline_teste_por_classe.csv": {
+      "bytes": 530,
+      "sha256": "20af13c0f733a3100fd34a070f73b5805239843c41dbb6f8bef9eadfc19f2ce1"
+    },
+    "comando.txt": {
+      "bytes": 197,
+      "sha256": "d22a4586ab8ee25c9f80976f0aeb60d565f525cc5c6e88bbbe9d07163adea436"
+    },
+    "comparacao_classificadores.csv": {
+      "bytes": 8632,
+      "sha256": "6cf2a85d56a77ba02d6b943c03e5bbf42a8011ffeb5e19b1061509eaa1c047c7"
+    },
+    "comparacao_metricas.csv": {
+      "bytes": 442,
+      "sha256": "048d25fe437d0af99866d358610d67f956f15e5bb318fc5d4339cf33d878acf5"
+    },
+    "comparacao_resumo.md": {
+      "bytes": 6218,
+      "sha256": "d45772cea9bf396cf1493f66238f409c14b555d96fd09f50b34da91f92f1cc79"
+    },
+    "distribuicao_similaridades_validacao.csv": {
+      "bytes": 3930,
+      "sha256": "acc154692059c54892dde595803d837b5eda14c8e10061e4b1b00e9dfce3cc7b"
+    },
+    "embeddings_teste_detalhado.csv": {
+      "bytes": 8428,
+      "sha256": "aeb65f276269348c0b2d2c5f52ea3730284ad5b6a33d5c3c698b3697b61af5d9"
+    },
+    "embeddings_teste_erros.csv": {
+      "bytes": 2845,
+      "sha256": "6e20c6a1485114e4ed83fcb62bb23d3e851145e815fcf044e0d8c1b0fa97ea94"
+    },
+    "embeddings_teste_matriz_confusao.csv": {
+      "bytes": 338,
+      "sha256": "8461fd162ddd093d9b3f7716e6d79bbea9cf969890f2f47ad7ba63a4726e4149"
+    },
+    "embeddings_teste_metricas.csv": {
+      "bytes": 211,
+      "sha256": "c3b4520ed603e99c71ffc6772bf4c2a7fa9291990d7323647cfa8dbb67899295"
+    },
+    "embeddings_teste_por_classe.csv": {
+      "bytes": 596,
+      "sha256": "9888371c06438db3a44e1e4ca80b2251d8134f40e055b3158d906527dd8f9173"
+    },
+    "embeddings_threshold_teste_detalhado.csv": {
+      "bytes": 8498,
+      "sha256": "08d39a2799a178b5c8b28a8809f8168f3897eadac6b528ed84b48c78650b8ddb"
+    },
+    "embeddings_threshold_teste_erros.csv": {
+      "bytes": 2045,
+      "sha256": "1b84422d44de1789bbc5c865aed405f15c72f4b1b731aff097baa9f6f5dd595e"
+    },
+    "embeddings_threshold_teste_matriz_confusao.csv": {
+      "bytes": 339,
+      "sha256": "07f5ad2561ad5fd8f27b35cbcfc51ca7484aedb098f63f5dadf5cdea3c00cb91"
+    },
+    "embeddings_threshold_teste_metricas.csv": {
+      "bytes": 218,
+      "sha256": "aaebad3a71c8c6825188608df675875ec728a105eba23c58c75bcaad4f0919be"
+    },
+    "embeddings_threshold_teste_por_classe.csv": {
+      "bytes": 644,
+      "sha256": "f5e606f0258c024e9916d27a265760ad352892dbd958efaf6eb426d077ec30ea"
+    },
+    "execucao.log": {
+      "bytes": 12886,
+      "sha256": "78d39b81b471fdce6c5e43e1ccb41b666b519626226d8f02ca53bba2d0793402"
+    },
+    "execucao_direta.log": {
+      "bytes": 25562,
+      "sha256": "3b46404e671fee5be9f2818e5db841fff253ec66d3b204c4c95bc5d9601cc279"
+    },
+    "particao_resumo.csv": {
+      "bytes": 195,
+      "sha256": "cc3f93ab25c8c336d62cc3ad4daec3585e41968dfc54c48b959aadf1369b6a2f"
+    },
+    "particao_teste.csv": {
+      "bytes": 5313,
+      "sha256": "b989127dfed6baf517a0e5257007d5e1a8b4573f01acb8c5a193c5a34e67ae69"
+    },
+    "particao_validacao.csv": {
+      "bytes": 3609,
+      "sha256": "645607ac1b5c578c89a9c5b425ef5420c3ccd52350389e53dd178f8eb8d8915c"
+    },
+    "relatorio_semana2.md": {
+      "bytes": 22938,
+      "sha256": "349215a184e148db3369dc99e8852f73bcd55a6b46222922322d42f58fc17b36"
+    },
+    "status_execucao.json": {
+      "bytes": 182,
+      "sha256": "76ae943ff001ecb58f613f643d2d7ceb0dd629a786267a123ae6875563c5a1a5"
+    },
+    "threshold_selecionado.csv": {
+      "bytes": 172,
+      "sha256": "a4bdb5df79e17d8ec17d106220a1e7023053fa34a5ff06b71a25d0f1fbbb64a9"
+    },
+    "threshold_selecionado_teste.csv": {
+      "bytes": 384,
+      "sha256": "66a61051dd6770ba8f01c3f578b5fa6245eb42547c1f1e0ef429e324378e549f"
+    }
+  },
+  "arquivos_obrigatorios_ausentes": [],
+  "comparacao_historica": [
+    {
+      "metodo": "Embeddings com threshold 0.50",
+      "status": "coincidente",
+      "historico": {
+        "metodo": "Embeddings com threshold 0.50",
+        "acuracia": 0.7666666666666667,
+        "macro_f1": 0.766308462008793
+      },
+      "reproducao": {
+        "metodo": "Embeddings com threshold 0.50",
+        "acuracia": 0.7666666666666667,
+        "macro_f1": 0.766308462008793
+      }
+    },
+    {
+      "metodo": "Embeddings sem threshold",
+      "status": "coincidente",
+      "historico": {
+        "metodo": "Embeddings sem threshold",
+        "acuracia": 0.6666666666666666,
+        "macro_f1": 0.671173030615755
+      },
+      "reproducao": {
+        "metodo": "Embeddings sem threshold",
+        "acuracia": 0.6666666666666666,
+        "macro_f1": 0.671173030615755
+      }
+    },
+    {
+      "metodo": "Palavras-chave",
+      "status": "coincidente",
+      "historico": {
+        "metodo": "Palavras-chave",
+        "acuracia": 0.5666666666666667,
+        "macro_f1": 0.5904431610700961
+      },
+      "reproducao": {
+        "metodo": "Palavras-chave",
+        "acuracia": 0.5666666666666667,
+        "macro_f1": 0.5904431610700961
+      }
+    }
+  ],
+  "observacao": "Execução direta registrada por status_execucao.json; tentativas anteriores do wrapper permanecem arquivadas."
+}

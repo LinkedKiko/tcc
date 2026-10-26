@@ -1,0 +1,14 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.7, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\Kleber\AppData\Local\Programs\Python\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Kleber\Desktop\TCC\Repositório
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 4 items
+
+tests/test_game_integration.py::test_tokens_retorna_dicas_correspondentes PASSED [ 25%]
+tests/test_game_integration.py::test_token_desconhecido_e_tratado PASSED [ 50%]
+tests/test_game_integration.py::test_integracao_preserva_classificacao_e_nao_muda_estado PASSED [ 75%]
+tests/test_game_integration.py::test_pergunta_nao_relacionada_usa_token_de_fallback PASSED [100%]
+
+============================== 4 passed in 0.04s ==============================

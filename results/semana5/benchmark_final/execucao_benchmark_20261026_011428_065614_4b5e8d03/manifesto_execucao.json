@@ -1,0 +1,65 @@
+{
+  "id_execucao": "benchmark_20261026_011428_065614_4b5e8d03",
+  "status": "executado",
+  "comando": [
+    "C:\\Users\\Kleber\\Desktop\\TCC\\Repositório\\.venv\\Scripts\\python.exe",
+    "scripts/benchmark_latencia.py",
+    "--por-classe",
+    "5",
+    "--seed",
+    "42",
+    "--repeticoes",
+    "30",
+    "--aquecimentos",
+    "3"
+  ],
+  "diretorio_trabalho": "C:\\Users\\Kleber\\Desktop\\TCC\\Repositório",
+  "data_execucao_utc": "2026-10-26T01:14:28.088703+00:00",
+  "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "seed": 42,
+  "por_classe": 5,
+  "quantidade_perguntas": 30,
+  "repeticoes": 30,
+  "aquecimentos": 3,
+  "contagem_por_classe": {
+    "TOKEN_COFRE": 5,
+    "TOKEN_LIVRO": 5,
+    "TOKEN_MURAL": 5,
+    "TOKEN_NAO_RELACIONADO": 5,
+    "TOKEN_RELOGIO": 5,
+    "TOKEN_SIMBOLOS": 5
+  },
+  "arquivos": {
+    "ambiente_experimental.json": {
+      "caminho": "ambiente_experimental.json",
+      "bytes": 1437,
+      "sha256": "7c5688f937c02046fd593d4aa5b1670d1c3e2a35ed77c9a9a1f9889f5be3669d"
+    },
+    "amostra_perguntas.csv": {
+      "caminho": "amostra_perguntas.csv",
+      "bytes": 2712,
+      "sha256": "248ce7a544d27abeb52a1abdfe09fe2763e559c1952a5f563f328b1b7674e1df"
+    },
+    "grafico_latencia.svg": {
+      "caminho": "grafico_latencia.svg",
+      "bytes": 33887,
+      "sha256": "1fa9a07b1d1e649b7f54a9496a1249e7ade40fcad13dbf2591642ce41a48d854"
+    },
+    "latencia_execucoes.csv": {
+      "caminho": "latencia_execucoes.csv",
+      "bytes": 395826,
+      "sha256": "2b20b15c4b6833073183ff5828d50c46a6af06550d1a25525a62e6b59ae0fba4"
+    },
+    "latencia_resumo.csv": {
+      "caminho": "latencia_resumo.csv",
+      "bytes": 1279,
+      "sha256": "fd149de123a16efd89f5cafb375431d6d11ab46650b52e795cb893baa4cddf3f"
+    },
+    "relatorio_latencia.md": {
+      "caminho": "relatorio_latencia.md",
+      "bytes": 3609,
+      "sha256": "fb510e858b33b2cf44b90a6af3a5c827295b24991210d8e050fe3b5d1aa7f9e7"
+    }
+  },
+  "erro": null
+}

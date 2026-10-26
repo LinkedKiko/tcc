@@ -1,0 +1,41 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.7, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\Kleber\AppData\Local\Programs\Python\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Kleber\Desktop\TCC\Repositório
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 31 items
+
+tests/test_classifier.py::test_carrega_csv_e_colunas_obrigatorias PASSED [  3%]
+tests/test_classifier.py::test_referencia_tem_quinze_frases_por_token PASSED [  6%]
+tests/test_classifier.py::test_dataset_inexistente_gera_erro PASSED      [  9%]
+tests/test_classifier.py::test_dataset_vazio_gera_erro PASSED            [ 12%]
+tests/test_classifier.py::test_dataset_sem_registros_gera_erro PASSED    [ 16%]
+tests/test_classifier.py::test_colunas_ausentes_geram_erro PASSED        [ 19%]
+tests/test_classifier.py::test_frase_vazia_no_dataset_gera_erro PASSED   [ 22%]
+tests/test_classifier.py::test_top_k_invalido_gera_erro PASSED           [ 25%]
+tests/test_classifier.py::test_threshold_fora_do_intervalo_gera_erro PASSED [ 29%]
+tests/test_classifier.py::test_classificacao_retorna_campos_esperados PASSED [ 32%]
+tests/test_classifier.py::test_top_k_tem_tres_resultados_ordenados PASSED [ 35%]
+tests/test_classifier.py::test_similaridade_esta_em_intervalo_valido PASSED [ 38%]
+tests/test_classifier.py::test_pergunta_vazia_e_rejeitada PASSED         [ 41%]
+tests/test_classifier.py::test_pergunta_nao_textual_e_rejeitada PASSED   [ 45%]
+tests/test_classifier.py::test_modo_invalido_gera_erro PASSED            [ 48%]
+tests/test_classifier.py::test_sem_threshold_nunca_rejeita PASSED        [ 51%]
+tests/test_classifier.py::test_threshold_alto_rejeita_no_modo_padrao PASSED [ 54%]
+tests/test_classifier.py::test_similaridade_igual_ao_limiar_e_aceita PASSED [ 58%]
+tests/test_classifier.py::test_similaridade_abaixo_do_limiar_e_rejeitada PASSED [ 61%]
+tests/test_classifier.py::test_modo_rejeicao_exige_threshold PASSED      [ 64%]
+tests/test_classifier.py::test_modo_rejeicao_ignora_referencias_nao_relacionadas PASSED [ 67%]
+tests/test_classifier.py::test_modo_rejeicao_com_threshold_alto_devolve_nao_relacionado PASSED [ 70%]
+tests/test_classifier.py::test_indices_puzzle_excluem_token_nao_relacionado PASSED [ 74%]
+tests/test_classifier.py::test_threshold_do_construtor_e_usado_por_padrao PASSED [ 77%]
+tests/test_classifier.py::test_lote_equivale_a_chamadas_individuais PASSED [ 80%]
+tests/test_classifier.py::test_matriz_similaridade_tem_formato_esperado PASSED [ 83%]
+tests/test_classifier.py::test_similaridade_maxima_puzzle_usa_apenas_cinco_intencoes PASSED [ 87%]
+tests/test_classifier.py::test_matriz_incompativel_gera_erro PASSED      [ 90%]
+tests/test_classifier.py::test_lote_vazio_gera_erro PASSED               [ 93%]
+tests/test_classifier.py::test_obter_dica_retorna_texto_cadastrado PASSED [ 96%]
+tests/test_classifier.py::test_token_desconhecido_nao_causa_excecao PASSED [100%]
+
+============================= 31 passed in 1.36s ==============================

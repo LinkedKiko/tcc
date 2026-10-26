@@ -6,3 +6,7 @@ __pycache__/
 .vscode/
 .ipynb_checkpoints/
 results/
+!results/
+!results/semana5/
+!results/semana5/**
+# Artefatos históricos fora da Semana 5 continuam ignorados por padrão.

@@ -1,0 +1,13 @@
+{
+  "fontes": [
+    "results/comparacao_metricas.csv",
+    "results/embeddings_threshold_teste_erros.csv",
+    "results/embeddings_threshold_teste_detalhado.csv",
+    "data/avaliacao_funcional_dicas_resultados.csv"
+  ],
+  "saida": "results\\semana5",
+  "total_metodos": 3,
+  "total_erros_melhor_classificador": 14,
+  "avaliacao_funcional_presente": true,
+  "origem_avaliacao_funcional": "C:\\Users\\Kleber\\Desktop\\TCC\\Repositório\\data\\avaliacao_funcional_dicas_resultados.csv"
+}

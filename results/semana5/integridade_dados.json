@@ -1,0 +1,375 @@
+{
+  "referencias": {
+    "total": 90,
+    "por_token": {
+      "TOKEN_SIMBOLOS": 15,
+      "TOKEN_LIVRO": 15,
+      "TOKEN_MURAL": 15,
+      "TOKEN_COFRE": 15,
+      "TOKEN_RELOGIO": 15,
+      "TOKEN_NAO_RELACIONADO": 15
+    },
+    "rotulos_desconhecidos": [],
+    "duplicatas_normalizadas": [],
+    "valores_ausentes_essenciais": false
+  },
+  "avaliacao": {
+    "total": 100,
+    "por_token": {
+      "TOKEN_SIMBOLOS": 15,
+      "TOKEN_LIVRO": 15,
+      "TOKEN_MURAL": 15,
+      "TOKEN_COFRE": 15,
+      "TOKEN_RELOGIO": 15,
+      "TOKEN_NAO_RELACIONADO": 25
+    },
+    "rotulos_desconhecidos": [],
+    "duplicatas_normalizadas": [],
+    "valores_ausentes_essenciais": false
+  },
+  "frases_idênticas_referencia_avaliacao": [],
+  "particoes": {
+    "random_state": 42,
+    "validation_size": 0.4,
+    "total_validacao": 40,
+    "total_teste": 60,
+    "sobreposicao_normalizada": [],
+    "resumo": [
+      {
+        "token_esperado": "TOKEN_SIMBOLOS",
+        "completo": 15,
+        "validacao": 6,
+        "teste": 9
+      },
+      {
+        "token_esperado": "TOKEN_LIVRO",
+        "completo": 15,
+        "validacao": 6,
+        "teste": 9
+      },
+      {
+        "token_esperado": "TOKEN_MURAL",
+        "completo": 15,
+        "validacao": 6,
+        "teste": 9
+      },
+      {
+        "token_esperado": "TOKEN_COFRE",
+        "completo": 15,
+        "validacao": 6,
+        "teste": 9
+      },
+      {
+        "token_esperado": "TOKEN_RELOGIO",
+        "completo": 15,
+        "validacao": 6,
+        "teste": 9
+      },
+      {
+        "token_esperado": "TOKEN_NAO_RELACIONADO",
+        "completo": 25,
+        "validacao": 10,
+        "teste": 15
+      },
+      {
+        "token_esperado": "TOTAL",
+        "completo": 100,
+        "validacao": 40,
+        "teste": 60
+      }
+    ],
+    "reproducao_deterministica": true
+  },
+  "resumo_gerado_compativel": true,
+  "arquivos_gerados": {
+    "validacao": {
+      "arquivo": "C:\\Users\\Kleber\\Desktop\\TCC\\Repositório\\results\\particao_validacao.csv",
+      "presente": true,
+      "linhas_esperadas": 40,
+      "linhas_geradas": 40,
+      "compatível": true
+    },
+    "teste": {
+      "arquivo": "C:\\Users\\Kleber\\Desktop\\TCC\\Repositório\\results\\particao_teste.csv",
+      "presente": true,
+      "linhas_esperadas": 60,
+      "linhas_geradas": 60,
+      "compatível": true
+    }
+  },
+  "normalizacao": "NFKC + NFKD sem diacríticos + casefold + espaços colapsados; usada apenas em comparações",
+  "hashes_sha256": {
+    "data\\frases_referencia.csv": "943cb34419221415de9bc6cbf040a6a1a3e20fbd92269f4df9d47add0ee0a161",
+    "data\\teste_manual.csv": "3ddb6b46d4a3032c6d1b4723913eb0ccbbf1b5ff470fade0ff6b502f527443d5",
+    "data\\avaliacao_funcional_dicas.csv": "dcc24cc0e7cca841f346a8af1f5a502902472997f97bc274dac97f9f7c2dbbb6",
+    "data\\avaliacao_funcional_dicas_resultados.csv": "e8d4bc21788081ce42819207a82ae9ccd9b7adcd589af813529b255b3885bcf9",
+    "data\\puzzle_config.json": "bee2226292f666743d6dab69777d3493ff4f3a00da6ec38d508461312346012b",
+    "results\\particao_validacao.csv": "645607ac1b5c578c89a9c5b425ef5420c3ccd52350389e53dd178f8eb8d8915c",
+    "results\\particao_teste.csv": "b989127dfed6baf517a0e5257007d5e1a8b4573f01acb8c5a193c5a34e67ae69",
+    "results\\particao_resumo.csv": "cc3f93ab25c8c336d62cc3ad4daec3585e41968dfc54c48b959aadf1369b6a2f"
+  },
+  "arquivos_entrada": {
+    "referencia": "data\\frases_referencia.csv",
+    "avaliacao": "data\\teste_manual.csv"
+  },
+  "ambiguidades_candidatas": [
+    {
+      "frase": "Será que aquilo escrito perto da saída mostra a ordem da combinação?",
+      "token_esperado": "TOKEN_SIMBOLOS",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_SIMBOLOS",
+        "TOKEN_COFRE"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_COFRE",
+          "TOKEN_SIMBOLOS"
+        ]
+      ],
+      "revisao_humana": true
+    },
+    {
+      "frase": "Os sinais desenhados junto à entrada revelam quais teclas usar?",
+      "token_esperado": "TOKEN_SIMBOLOS",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_SIMBOLOS",
+        "TOKEN_COFRE"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_COFRE",
+          "TOKEN_SIMBOLOS"
+        ]
+      ],
+      "revisao_humana": true
+    },
+    {
+      "frase": "Devo procurar uma tradução dentro das páginas sobre bichos?",
+      "token_esperado": "TOKEN_LIVRO",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_MURAL",
+        "TOKEN_LIVRO"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_LIVRO",
+          "TOKEN_MURAL"
+        ]
+      ],
+      "revisao_humana": true
+    },
+    {
+      "frase": "O livro de animais serve para descobrir o nome de cada símbolo?",
+      "token_esperado": "TOKEN_LIVRO",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_SIMBOLOS",
+        "TOKEN_MURAL",
+        "TOKEN_LIVRO"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_LIVRO",
+          "TOKEN_MURAL"
+        ],
+        [
+          "TOKEN_LIVRO",
+          "TOKEN_SIMBOLOS"
+        ]
+      ],
+      "revisao_humana": true
+    },
+    {
+      "frase": "Preciso folhear a enciclopédia até achar o bicho certo?",
+      "token_esperado": "TOKEN_LIVRO",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_MURAL",
+        "TOKEN_LIVRO"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_LIVRO",
+          "TOKEN_MURAL"
+        ]
+      ],
+      "revisao_humana": true
+    },
+    {
+      "frase": "Há algo útil nas páginas do livro sobre a escrita da parede?",
+      "token_esperado": "TOKEN_LIVRO",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_SIMBOLOS",
+        "TOKEN_LIVRO"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_LIVRO",
+          "TOKEN_SIMBOLOS"
+        ]
+      ],
+      "revisao_humana": true
+    },
+    {
+      "frase": "Talvez essa coleção de animais funcione como um dicionário?",
+      "token_esperado": "TOKEN_LIVRO",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_MURAL",
+        "TOKEN_LIVRO"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_LIVRO",
+          "TOKEN_MURAL"
+        ]
+      ],
+      "revisao_humana": true
+    },
+    {
+      "frase": "A obra ilustrada pode ensinar a correspondência entre criaturas e símbolos?",
+      "token_esperado": "TOKEN_LIVRO",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_SIMBOLOS",
+        "TOKEN_MURAL",
+        "TOKEN_LIVRO"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_LIVRO",
+          "TOKEN_MURAL"
+        ],
+        [
+          "TOKEN_LIVRO",
+          "TOKEN_SIMBOLOS"
+        ]
+      ],
+      "revisao_humana": true
+    },
+    {
+      "frase": "Como eu descubro a correspondência entre os nomes dos animais e aquela escrita?",
+      "token_esperado": "TOKEN_LIVRO",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_MURAL",
+        "TOKEN_LIVRO"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_LIVRO",
+          "TOKEN_MURAL"
+        ]
+      ],
+      "revisao_humana": true
+    },
+    {
+      "frase": "A caixa trancada contém a parte que falta da investigação?",
+      "token_esperado": "TOKEN_COFRE",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_COFRE",
+        "TOKEN_MURAL"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_COFRE",
+          "TOKEN_MURAL"
+        ]
+      ],
+      "revisao_humana": true
+    },
+    {
+      "frase": "Vale a pena destrancar o cofre antes de mexer na porta?",
+      "token_esperado": "TOKEN_COFRE",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_SIMBOLOS",
+        "TOKEN_COFRE"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_COFRE",
+          "TOKEN_SIMBOLOS"
+        ]
+      ],
+      "revisao_humana": true
+    },
+    {
+      "frase": "Esse horário congelado pode ser uma combinação?",
+      "token_esperado": "TOKEN_RELOGIO",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_COFRE",
+        "TOKEN_RELOGIO"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_COFRE",
+          "TOKEN_RELOGIO"
+        ]
+      ],
+      "revisao_humana": true
+    },
+    {
+      "frase": "O relógio que não funciona mais esconde algum código?",
+      "token_esperado": "TOKEN_RELOGIO",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_COFRE",
+        "TOKEN_RELOGIO"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_COFRE",
+          "TOKEN_RELOGIO"
+        ]
+      ],
+      "revisao_humana": true
+    },
+    {
+      "frase": "As horas indicadas no relógio servem para o cofre?",
+      "token_esperado": "TOKEN_RELOGIO",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_COFRE",
+        "TOKEN_RELOGIO"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_COFRE",
+          "TOKEN_RELOGIO"
+        ]
+      ],
+      "revisao_humana": true
+    },
+    {
+      "frase": "A marcação temporal fixa tem utilidade para a caixa trancada?",
+      "token_esperado": "TOKEN_RELOGIO",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_SIMBOLOS",
+        "TOKEN_COFRE",
+        "TOKEN_RELOGIO"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_COFRE",
+          "TOKEN_RELOGIO"
+        ],
+        [
+          "TOKEN_COFRE",
+          "TOKEN_SIMBOLOS"
+        ]
+      ],
+      "revisao_humana": true
+    },
+    {
+      "frase": "Como transformar o instante exibido em uma senha?",
+      "token_esperado": "TOKEN_RELOGIO",
+      "tokens_sugeridos_por_termos": [
+        "TOKEN_COFRE",
+        "TOKEN_RELOGIO"
+      ],
+      "pares_prioritarios": [
+        [
+          "TOKEN_COFRE",
+          "TOKEN_RELOGIO"
+        ]
+      ],
+      "revisao_humana": true
+    }
+  ],
+  "ambiguidades_observacao": "Candidatos são alertas para revisão humana; nenhum rótulo foi alterado automaticamente.",
+  "problemas": [],
+  "integridade_aprovada": true
+}

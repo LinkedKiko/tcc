@@ -1,0 +1,54 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.7, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\Kleber\AppData\Local\Programs\Python\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Kleber\Desktop\TCC\Repositório
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 44 items
+
+tests/test_evaluation.py::test_acuracia_e_contagens_corretas PASSED      [  2%]
+tests/test_evaluation.py::test_metricas_por_classe_conferem_com_calculo_manual PASSED [  4%]
+tests/test_evaluation.py::test_classe_ausente_nas_predicoes_nao_gera_divisao_por_zero PASSED [  6%]
+tests/test_evaluation.py::test_matriz_confusao_tem_ordem_fixa_dos_tokens PASSED [  9%]
+tests/test_evaluation.py::test_erros_sao_identificados_com_similaridade_e_dificuldade PASSED [ 11%]
+tests/test_evaluation.py::test_similaridade_ausente_permanece_vazia PASSED [ 13%]
+tests/test_evaluation.py::test_rotulos_esperados_sao_preservados PASSED  [ 15%]
+tests/test_evaluation.py::test_quantidade_de_classificacoes_bate_com_o_dataset PASSED [ 18%]
+tests/test_evaluation.py::test_dataset_sem_colunas_obrigatorias_gera_erro PASSED [ 20%]
+tests/test_evaluation.py::test_dataset_vazio_gera_erro PASSED            [ 22%]
+tests/test_evaluation.py::test_tamanhos_incompativeis_geram_erro PASSED  [ 25%]
+tests/test_evaluation.py::test_salvar_resultado_gera_os_csvs PASSED      [ 27%]
+tests/test_evaluation.py::test_dataset_de_avaliacao_tem_cem_frases PASSED [ 29%]
+tests/test_evaluation.py::test_distribuicao_esperada_do_dataset PASSED   [ 31%]
+tests/test_evaluation.py::test_avaliacao_nao_repete_frases_da_referencia PASSED [ 34%]
+tests/test_evaluation.py::test_divisao_respeita_as_proporcoes PASSED     [ 36%]
+tests/test_evaluation.py::test_divisao_e_estratificada PASSED            [ 38%]
+tests/test_evaluation.py::test_divisao_e_deterministica PASSED           [ 40%]
+tests/test_evaluation.py::test_sementes_diferentes_produzem_particoes_diferentes PASSED [ 43%]
+tests/test_evaluation.py::test_nao_existe_sobreposicao_entre_validacao_e_teste PASSED [ 45%]
+tests/test_evaluation.py::test_resumo_das_particoes_soma_o_total PASSED  [ 47%]
+tests/test_evaluation.py::test_salvar_particoes_registra_os_arquivos PASSED [ 50%]
+tests/test_evaluation.py::test_divisao_rejeita_classe_com_uma_unica_frase PASSED [ 52%]
+tests/test_evaluation.py::test_dataset_com_frases_repetidas_gera_erro PASSED [ 54%]
+tests/test_evaluation.py::test_dataset_com_token_desconhecido_gera_erro PASSED [ 56%]
+tests/test_evaluation.py::test_coluna_dificuldade_opcional_recebe_valor_padrao PASSED [ 59%]
+tests/test_evaluation.py::test_comparacao_por_pergunta_tem_as_colunas_exigidas PASSED [ 61%]
+tests/test_evaluation.py::test_divergencias_separam_os_quatro_casos PASSED [ 63%]
+tests/test_evaluation.py::test_comparacao_exige_as_mesmas_perguntas PASSED [ 65%]
+tests/test_evaluation.py::test_tabela_comparativa_lista_todos_os_metodos PASSED [ 68%]
+tests/test_evaluation.py::test_tabela_de_thresholds_tem_as_colunas_exigidas PASSED [ 70%]
+tests/test_evaluation.py::test_contagens_de_rejeicao_somam_o_total PASSED [ 72%]
+tests/test_evaluation.py::test_classificacao_correta_nao_excede_as_aceitas PASSED [ 75%]
+tests/test_evaluation.py::test_threshold_acima_das_similaridades_rejeita_tudo PASSED [ 77%]
+tests/test_evaluation.py::test_threshold_abaixo_das_similaridades_aceita_tudo PASSED [ 79%]
+tests/test_evaluation.py::test_aceitacoes_nao_aumentam_com_threshold_maior PASSED [ 81%]
+tests/test_evaluation.py::test_selecao_do_threshold_usa_maior_macro_f1 PASSED [ 84%]
+tests/test_evaluation.py::test_empate_de_macro_f1_e_resolvido_pela_acuracia PASSED [ 86%]
+tests/test_evaluation.py::test_empate_total_e_resolvido_pelo_menor_threshold PASSED [ 88%]
+tests/test_evaluation.py::test_selecao_rejeita_tabela_vazia PASSED       [ 90%]
+tests/test_evaluation.py::test_threshold_selecionado_apenas_na_validacao PASSED [ 93%]
+tests/test_evaluation.py::test_avaliar_embeddings_sem_threshold_registra_similaridade PASSED [ 95%]
+tests/test_evaluation.py::test_modo_rejeicao_abaixo_do_limiar_preve_tudo_como_nao_relacionado PASSED [ 97%]
+tests/test_evaluation.py::test_distribuicao_de_similaridades_marca_perguntas_relacionadas PASSED [100%]
+
+============================= 44 passed in 1.74s ==============================

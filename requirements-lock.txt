@@ -1,0 +1,11 @@
+# Versões registradas no ambiente experimental da Semana 5 (Python 3.14.7).
+# O arquivo não inclui caminhos locais, credenciais ou bibliotecas transitivas
+# não necessárias para instalar o projeto.
+sentence-transformers==6.1.0
+pandas==3.0.6
+numpy==2.5.3
+scikit-learn==1.9.1
+matplotlib==3.11.2
+pytest==9.1.1
+streamlit==1.66.1
+torch==2.14.1+cpu

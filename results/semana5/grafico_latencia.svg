@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <title>Latência mediana subsequente por configuração</title>
+  <rect width="900" height="520" fill="#ffffff"/>
+  <text x="450" y="38" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold">Latência mediana subsequente (ms)</text>
+  <text x="450" y="65" text-anchor="middle" font-family="Arial" font-size="13">450 observações por configuração; CPU; MiniLM carregado uma vez</text>
+  <line x1="100" y1="420" x2="850" y2="420" stroke="#333"/>
+  <line x1="100" y1="100" x2="100" y2="420" stroke="#333"/>
+  <g font-family="Arial" font-size="12" fill="#333">
+    <text x="92" y="424" text-anchor="end">0</text><text x="92" y="344" text-anchor="end">4</text>
+    <text x="92" y="264" text-anchor="end">8</text><text x="92" y="184" text-anchor="end">12</text>
+    <text x="92" y="104" text-anchor="end">16</text>
+    <text x="470" y="475" text-anchor="middle">Configuração</text><text x="28" y="260" text-anchor="middle" transform="rotate(-90 28 260)">ms</text>
+  </g>
+  <g stroke="#e0e0e0" stroke-dasharray="3 3"><line x1="100" y1="340" x2="850" y2="340"/><line x1="100" y1="260" x2="850" y2="260"/><line x1="100" y1="180" x2="850" y2="180"/><line x1="100" y1="100" x2="850" y2="100"/></g>
+  <rect x="180" y="419.7" width="150" height="0.3" fill="#4c78a8"/><rect x="375" y="125.4" width="150" height="294.6" fill="#f58518"/><rect x="570" y="111.3" width="150" height="308.7" fill="#54a24b"/>
+  <g font-family="Arial" font-size="14" text-anchor="middle"><text x="255" y="405">0,0133</text><text x="450" y="112">14,7290</text><text x="645" y="98">15,4358</text></g>
+  <g font-family="Arial" font-size="13" text-anchor="middle"><text x="255" y="445">Palavras-chave</text><text x="450" y="445">Embeddings padrão</text><text x="645" y="445">Rejeição 0,50</text></g>
+  <text x="450" y="505" text-anchor="middle" font-family="Arial" font-size="11" fill="#555">Fonte: results/semana5/latencia_resumo.csv</text>
+</svg>

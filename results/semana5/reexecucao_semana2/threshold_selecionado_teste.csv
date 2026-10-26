@@ -1,0 +1,2 @@
+threshold_selecionado,criterio,macro_f1_validacao,acuracia_validacao,total_teste,acertos_teste,erros_teste,acuracia_teste,macro_precision_teste,macro_recall_teste,macro_f1_teste
+0.5,"maior Macro F1; empate resolvido pela maior acuracia e, persistindo, pelo menor threshold",0.7584784496549203,0.775,60,46,14,0.7666666666666667,0.7837912087912088,0.762962962962963,0.766308462008793

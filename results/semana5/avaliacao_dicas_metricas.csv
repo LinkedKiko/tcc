@@ -1,0 +1,11 @@
+metrica,numerador,denominador,proporcao,unidade,definicao
+classificacao_por_pergunta_distinta,10,15,0.6666666666666666,pergunta,Uma pergunta é considerada correta somente se todas as suas ocorrências em estados apresentarem token correto.
+classificacao_por_cenario,20,27,0.7407407407407407,cenário,Cada uma das 27 linhas é uma avaliação de estado; perguntas repetidas não são independentes.
+dicas_adequadas,20,27,0.7407407407407407,cenário,Julgamento registrado pelo avaliador humano na coluna dica_adequada.
+sucesso_completo,18,27,0.6666666666666666,cenário,classificacao_correta == Sim e dica_adequada == Sim.
+respeito_ao_progresso,27,27,1.0,cenário,Julgamento registrado em respeita_progresso.
+ausencia_de_spoiler,27,27,1.0,cenário,Julgamento registrado em sem_spoiler.
+token_errado_dica_inadequada,5,27,0.18518518518518517,cenário,Cruzamento entre o token classificado e o julgamento da dica.
+token_errado_dica_adequada,2,27,0.07407407407407407,cenário,Cruzamento entre o token classificado e o julgamento da dica.
+token_correto_dica_inadequada,2,27,0.07407407407407407,cenário,Cruzamento entre o token classificado e o julgamento da dica.
+token_correto_dica_adequada,18,27,0.6666666666666666,cenário,Cruzamento entre o token classificado e o julgamento da dica.

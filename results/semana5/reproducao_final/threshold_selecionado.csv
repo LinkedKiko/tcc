@@ -1,0 +1,2 @@
+threshold,macro_f1,acuracia,criterio,empatados
+0.5,0.7584784496549203,0.775,"maior Macro F1; empate resolvido pela maior acuracia e, persistindo, pelo menor threshold",1

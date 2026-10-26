@@ -1,0 +1,278 @@
+
+========================================
+DIVISAO DETERMINISTICA DO CONJUNTO DE AVALIACAO
+========================================
+
+RANDOM_STATE = 42 | validacao = 40%
+
+       token_esperado  completo  validacao  teste
+       TOKEN_SIMBOLOS        15          6      9
+          TOKEN_LIVRO        15          6      9
+          TOKEN_MURAL        15          6      9
+          TOKEN_COFRE        15          6      9
+        TOKEN_RELOGIO        15          6      9
+TOKEN_NAO_RELACIONADO        25         10     15
+                TOTAL       100         40     60
+
+Verificacoes de integridade:
+  Frases de referencia: 90
+  Frases de avaliacao: 100
+  Frases identicas entre referencia e avaliacao: 0
+  Frases em validacao e teste ao mesmo tempo: 0
+Carregando o modelo de embeddings e as frases de refer�ncia...
+
+========================================
+ANALISE DE THRESHOLDS (CONJUNTO DE VALIDACAO)
+========================================
+
+  Thr.    Acur.   MacroF1  AceitOK  RejOK  FalsAce  FalsRej  ClassOK
+  0.40   0.7500    0.7409       30      8        2        0       22
+  0.45   0.7500    0.7409       30      8        2        0       22
+  0.50   0.7750    0.7585       29      9        1        1       22
+  0.55   0.7750    0.7474       27     10        0        3       21
+  0.60   0.6250    0.6158       20     10        0       10       15
+  0.65   0.5500    0.5397       15     10        0       15       12
+  0.70   0.4500    0.4101       10     10        0       20        8
+  0.75   0.4250    0.3750        8     10        0       22        7
+  0.80   0.3000    0.1543        3     10        0       27        2
+
+Criterio de selecao: maior Macro F1; empate resolvido pela maior acuracia e, persistindo, pelo menor threshold
+Threshold selecionado: 0.50
+Macro F1 na validacao: 0.7585
+Acuracia na validacao: 0.7750
+
+Similaridade maxima frente as cinco intencoes (validacao):
+             count      mean       min       max
+relacionada                                     
+False           10  0.325961  0.182655  0.507676
+True            30  0.667775  0.497172  0.940968
+
+Tabela de thresholds salva em: C:\Users\Kleber\Desktop\TCC\Reposit�rio\results\semana5\reproducao_final\analise_thresholds.csv
+Threshold selecionado registrado em: C:\Users\Kleber\Desktop\TCC\Reposit�rio\results\semana5\reproducao_final\threshold_selecionado.csv
+
+Resultados salvos em: C:\Users\Kleber\Desktop\TCC\Reposit�rio\results\semana5\reproducao_final
+  detalhado: baseline_teste_detalhado.csv
+  erros: baseline_teste_erros.csv
+  metricas: baseline_teste_metricas.csv
+  matriz_confusao: baseline_teste_matriz_confusao.csv
+  por_classe: baseline_teste_por_classe.csv
+
+Resultados salvos em: C:\Users\Kleber\Desktop\TCC\Reposit�rio\results\semana5\reproducao_final
+  detalhado: embeddings_teste_detalhado.csv
+  erros: embeddings_teste_erros.csv
+  metricas: embeddings_teste_metricas.csv
+  matriz_confusao: embeddings_teste_matriz_confusao.csv
+  por_classe: embeddings_teste_por_classe.csv
+
+========================================
+COMPARACAO DOS CLASSIFICADORES
+========================================
+
+Conjunto: teste | perguntas: 60
+
+                  metodo conjunto threshold  total  acertos  erros  acuracia  macro_precision  macro_recall  macro_f1
+          Palavras-chave    teste      None     60       34     26  0.566667         0.661905      0.562963  0.590443
+Embeddings sem threshold    teste      None     60       40     20  0.666667         0.715025      0.703704  0.671173
+
+========================================
+ANALISE DE DIVERGENCIAS
+========================================
+
+CASO_A - Embeddings acertaram e palavras-chave erraram: 16 pergunta(s)
+  - Preciso decifrar aquela anota��o antiga para liberar a passagem?
+    esperado=TOKEN_SIMBOLOS | keywords=TOKEN_NAO_RELACIONADO | embeddings=TOKEN_SIMBOLOS | sim=0.5379
+  - Aquela inscri��o estranha na superf�cie vertical serve de orienta��o?
+    esperado=TOKEN_SIMBOLOS | keywords=TOKEN_NAO_RELACIONADO | embeddings=TOKEN_SIMBOLOS | sim=0.5962
+  - A ordem em que as marcas aparecem altera o resultado?
+    esperado=TOKEN_SIMBOLOS | keywords=TOKEN_NAO_RELACIONADO | embeddings=TOKEN_SIMBOLOS | sim=0.6208
+
+CASO_B - Palavras-chave acertaram e embeddings erraram: 10 pergunta(s)
+  - O livro de animais serve para descobrir o nome de cada s�mbolo?
+    esperado=TOKEN_LIVRO | keywords=TOKEN_LIVRO | embeddings=TOKEN_MURAL | sim=0.8011
+  - A obra ilustrada pode ensinar a correspond�ncia entre criaturas e s�mbolos?
+    esperado=TOKEN_LIVRO | keywords=TOKEN_LIVRO | embeddings=TOKEN_MURAL | sim=0.7305
+  - As figuras repetidas no desenho podem virar algarismos?
+    esperado=TOKEN_MURAL | keywords=TOKEN_MURAL | embeddings=TOKEN_SIMBOLOS | sim=0.7056
+
+CASO_C - Ambos acertaram: 24 pergunta(s)
+  - Esses desenhos misteriosos ajudam a escolher os n�meros do painel?
+    esperado=TOKEN_SIMBOLOS | keywords=TOKEN_SIMBOLOS | embeddings=TOKEN_SIMBOLOS | sim=0.6798
+  - Devo anotar a ordem exata dos s�mbolos antes de digitar no painel?
+    esperado=TOKEN_SIMBOLOS | keywords=TOKEN_SIMBOLOS | embeddings=TOKEN_SIMBOLOS | sim=0.7135
+  - Esses s�mbolos ao lado da entrada correspondem a d�gitos?
+    esperado=TOKEN_SIMBOLOS | keywords=TOKEN_SIMBOLOS | embeddings=TOKEN_SIMBOLOS | sim=0.8263
+
+CASO_D - Ambos erraram: 10 pergunta(s)
+  - Os rabiscos gravados perto da fechadura eletr�nica apontam uma ordem?
+    esperado=TOKEN_SIMBOLOS | keywords=TOKEN_NAO_RELACIONADO | embeddings=TOKEN_COFRE | sim=0.6607
+  - O que exatamente devo decifrar para conseguir liberar a sa�da?
+    esperado=TOKEN_SIMBOLOS | keywords=TOKEN_NAO_RELACIONADO | embeddings=TOKEN_COFRE | sim=0.5474
+  - Como eu transformo o que est� retratado em n�meros?
+    esperado=TOKEN_MURAL | keywords=TOKEN_NAO_RELACIONADO | embeddings=TOKEN_RELOGIO | sim=0.6152
+
+Comparacao salva em: C:\Users\Kleber\Desktop\TCC\Reposit�rio\results\semana5\reproducao_final\comparacao_classificadores.csv
+Resumo salvo em: C:\Users\Kleber\Desktop\TCC\Reposit�rio\results\semana5\reproducao_final\comparacao_resumo.md
+
+========================================
+AVALIACAO DO CLASSIFICADOR
+========================================
+
+Metodo: Embeddings com threshold 0.50
+Conjunto: teste
+Threshold aplicado: 0.50
+
+Total de perguntas: 60
+Acertos: 46
+Erros: 14
+
+Acuracia: 76.67%
+Macro Precision: 0.7838
+Macro Recall: 0.7630
+Macro F1: 0.7663
+
+========================================
+RESULTADOS POR TOKEN
+========================================
+
+Token                      Prec.  Recall      F1  Sup.
+TOKEN_SIMBOLOS            0.8750  0.7778  0.8235     9
+TOKEN_LIVRO               0.8750  0.7778  0.8235     9
+TOKEN_MURAL               0.7000  0.7778  0.7368     9
+TOKEN_COFRE               0.5385  0.7778  0.6364     9
+TOKEN_RELOGIO             0.8571  0.6667  0.7500     9
+TOKEN_NAO_RELACIONADO     0.8571  0.8000  0.8276    15
+
+========================================
+MATRIZ DE CONFUSAO
+========================================
+(linhas = token esperado, colunas = token previsto)
+
+                            previsto_TOKEN_SIMBOLOS  previsto_TOKEN_LIVRO  previsto_TOKEN_MURAL  previsto_TOKEN_COFRE  previsto_TOKEN_RELOGIO  previsto_TOKEN_NAO_RELACIONADO
+real_TOKEN_SIMBOLOS                               7                     0                     0                     2                       0                               0
+real_TOKEN_LIVRO                                  0                     7                     2                     0                       0                               0
+real_TOKEN_MURAL                                  1                     0                     7                     0                       1                               0
+real_TOKEN_COFRE                                  0                     0                     0                     7                       0                               2
+real_TOKEN_RELOGIO                                0                     0                     0                     3                       6                               0
+real_TOKEN_NAO_RELACIONADO                        0                     1                     1                     1                       0                              12
+
+========================================
+ERROS DE CLASSIFICACAO
+========================================
+
+Pergunta: Os rabiscos gravados perto da fechadura eletr�nica apontam uma ordem?
+  Token esperado: TOKEN_SIMBOLOS
+  Token previsto: TOKEN_COFRE
+  Similaridade: 0.6607
+  Dificuldade: media
+
+Pergunta: O que exatamente devo decifrar para conseguir liberar a sa�da?
+  Token esperado: TOKEN_SIMBOLOS
+  Token previsto: TOKEN_COFRE
+  Similaridade: 0.5474
+  Dificuldade: dificil
+
+Pergunta: O livro de animais serve para descobrir o nome de cada s�mbolo?
+  Token esperado: TOKEN_LIVRO
+  Token previsto: TOKEN_MURAL
+  Similaridade: 0.8011
+  Dificuldade: facil
+
+Pergunta: A obra ilustrada pode ensinar a correspond�ncia entre criaturas e s�mbolos?
+  Token esperado: TOKEN_LIVRO
+  Token previsto: TOKEN_MURAL
+  Similaridade: 0.7305
+  Dificuldade: media
+
+Pergunta: As figuras repetidas no desenho podem virar algarismos?
+  Token esperado: TOKEN_MURAL
+  Token previsto: TOKEN_SIMBOLOS
+  Similaridade: 0.7056
+  Dificuldade: facil
+
+Pergunta: Como eu transformo o que est� retratado em n�meros?
+  Token esperado: TOKEN_MURAL
+  Token previsto: TOKEN_RELOGIO
+  Similaridade: 0.6152
+  Dificuldade: dificil
+
+Pergunta: Vale a pena destrancar o cofre antes de mexer na porta?
+  Token esperado: TOKEN_COFRE
+  Token previsto: TOKEN_NAO_RELACIONADO
+  Similaridade: 0.4713
+  Dificuldade: facil
+
+Pergunta: Preciso de um c�digo para destrancar aquele m�vel pequeno?
+  Token esperado: TOKEN_COFRE
+  Token previsto: TOKEN_NAO_RELACIONADO
+  Similaridade: 0.4688
+  Dificuldade: media
+
+Pergunta: Os ponteiros parados fornecem os n�meros da abertura?
+  Token esperado: TOKEN_RELOGIO
+  Token previsto: TOKEN_COFRE
+  Similaridade: 0.6787
+  Dificuldade: facil
+
+Pergunta: O instante em que tudo paralisou tem rela��o com a abertura?
+  Token esperado: TOKEN_RELOGIO
+  Token previsto: TOKEN_COFRE
+  Similaridade: 0.6145
+  Dificuldade: dificil
+
+Pergunta: Como uso aquilo que est� travado para descobrir a combina��o?
+  Token esperado: TOKEN_RELOGIO
+  Token previsto: TOKEN_COFRE
+  Similaridade: 0.6925
+  Dificuldade: dificil
+
+Pergunta: Que livro de fic��o voc� recomenda?
+  Token esperado: TOKEN_NAO_RELACIONADO
+  Token previsto: TOKEN_LIVRO
+  Similaridade: 0.5543
+  Dificuldade: dificil
+
+Pergunta: Como criar uma senha realmente segura para o banco?
+  Token esperado: TOKEN_NAO_RELACIONADO
+  Token previsto: TOKEN_COFRE
+  Similaridade: 0.5898
+  Dificuldade: dificil
+
+Pergunta: Quantas esp�cies de aves existem no Brasil?
+  Token esperado: TOKEN_NAO_RELACIONADO
+  Token previsto: TOKEN_MURAL
+  Similaridade: 0.5861
+  Dificuldade: dificil
+
+Resultados salvos em: C:\Users\Kleber\Desktop\TCC\Reposit�rio\results\semana5\reproducao_final
+  detalhado: embeddings_threshold_teste_detalhado.csv
+  erros: embeddings_threshold_teste_erros.csv
+  metricas: embeddings_threshold_teste_metricas.csv
+  matriz_confusao: embeddings_threshold_teste_matriz_confusao.csv
+  por_classe: embeddings_threshold_teste_por_classe.csv
+
+========================================
+COMPARACAO FINAL DOS TRES CENARIOS (CONJUNTO DE TESTE)
+========================================
+
+                       metodo conjunto  threshold  total  acertos  erros  acuracia  macro_precision  macro_recall  macro_f1
+               Palavras-chave    teste        NaN     60       34     26  0.566667         0.661905      0.562963  0.590443
+     Embeddings sem threshold    teste        NaN     60       40     20  0.666667         0.715025      0.703704  0.671173
+Embeddings com threshold 0.50    teste        0.5     60       46     14  0.766667         0.783791      0.762963  0.766308
+
+Relatorio final: C:\Users\Kleber\Desktop\TCC\Reposit�rio\results\semana5\reproducao_final\relatorio_semana2.md
+
+========================================
+RESUMO DA EXECUCAO
+========================================
+
+Threshold selecionado na validacao: 0.50
+Criterio: maior Macro F1; empate resolvido pela maior acuracia e, persistindo, pelo menor threshold
+Perguntas no conjunto de teste: 60
+  Palavras-chave: acuracia=56.67% | macro F1=0.5904
+  Embeddings sem threshold: acuracia=66.67% | macro F1=0.6712
+  Embeddings com threshold 0.50: acuracia=76.67% | macro F1=0.7663
+
+--- STDERR ---
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights: 100%|##########| 199/199 [00:00<00:00, 3812.48it/s]
