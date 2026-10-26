@@ -1,10 +1,10 @@
 {
   "identificador": "tcc-semana5-final",
   "commit_base": "6a6edacdfdfed8da804e776b06a0b6ad48d2e0d0",
-  "commit_final": "fa590e9",
+  "commit_final": "e85034e",
   "tag_final": "tcc-semana5-final",
   "data_registro": "2026-10-26",
-  "status_git_no_registro": "commit_local_fa590e9_criado;_tag_ainda_a_criar",
+  "status_git_no_registro": "commit_final_e85034e_e_tag_tcc-semana5-final_criados;_artefatos_historicos_nao_relacionados_permanecem_untracked",
   "configuracao_preservada": {
     "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
     "random_state": 42,
