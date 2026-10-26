@@ -1,10 +1,10 @@
 {
   "identificador": "tcc-semana5-final",
   "commit_base": "6a6edacdfdfed8da804e776b06a0b6ad48d2e0d0",
-  "commit_final": null,
-  "tag_final": null,
+  "commit_final": "fa590e9",
+  "tag_final": "tcc-semana5-final",
   "data_registro": "2026-10-26",
-  "status_git_no_registro": "artefatos_da_semana5_prontos_para_commit_local;_commit_e_tag_ainda_pendentes",
+  "status_git_no_registro": "commit_local_fa590e9_criado;_tag_ainda_a_criar",
   "configuracao_preservada": {
     "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
     "random_state": 42,
@@ -63,6 +63,6 @@
     "integracao_modelo_real": {"coletados": 3, "aprovados": 3, "codigo_saida": 0},
     "semana5": {"coletados": 11, "aprovados": 11, "codigo_saida": 0}
   },
-  "observacao": "Datasets e resultados históricos preservados. O commit_final e a tag_final devem ser preenchidos somente após sua criação real no Git; nenhum push remoto foi realizado.",
+  "observacao": "Datasets e resultados históricos preservados. O commit_final registra o commit local que contém os artefatos experimentais; a tag deve ser conferida no Git. Nenhum push remoto foi realizado.",
   "artefatos": "results/semana5"
 }
